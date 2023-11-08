@@ -5,7 +5,7 @@
 <ALMConfig AlmType="QC" Guid="9f4664d7-cc19-416a-805b-0ef605e1fe2b" JiraTestingALM="None" ParentGuid="00000000-0000-0000-0000-000000000000" />
 <ALMConfig ALMConfigPackageFolderPath="~\\Configurations\JiraConfigurationsPackage" ALMDomain="_NoDomain_" ALMProjectKey="10302" ALMProjectName="GINGERMBT" ALMServerURL="http://99.80.254.65:8080" AlmType="Jira" DefaultAlm="True" Guid="28d22d44-c5d6-48f0-97a2-3454b4d6689b" JiraTestingALM="Xray" ParentGuid="00000000-0000-0000-0000-000000000000" UseRest="True" />
 </ALMConfigs>
-
+ 
 <ApplicationPlatforms>
 <ApplicationPlatform AppName="Customer Creation System" Description="Customers creation system" Guid="474440d5-eefd-4a24-945e-1df377bd3fce" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" />
 <ApplicationPlatform AppName="Digital One OC" Description="Digital One system" Guid="5bb65b15-4ef6-4453-8707-9236cae4ce3a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />

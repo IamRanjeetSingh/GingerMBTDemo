@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="fa97d59e-c775-4ba4-858f-35b58600d758" ItemType="Activity" CreatedBy="meni" Created="202206061021" GingerVersion="4.4.0.0" Version="4" LastUpdateBy="MENIK" LastUpdate="202302202159" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Discovery Equipment" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="fa97d59e-c775-4ba4-858f-35b58600d758" Mandatory="True" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Catalog One" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Discovery Equipment" Guid="cfe9c2ce-cab5-4512-9268-69192596c15f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="f5dbc7e0-bc77-4580-a67d-cdf316686042" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Equipment name" Guid="ba3520ff-94d7-4dc5-b94e-009767dfc4e7" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="9ec2e728-46ef-452b-a8d1-3d85adc505f9" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment Name={Var Name=Random_Equipment Name}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="2fc0c56c-1913-41c7-975f-e9df5f542d35" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Equipment details" Guid="5897e8a4-eb0e-4dc8-a36b-bb3300cf2b10" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="2ceb22eb-c4b5-4f14-be59-43bad2785a70" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment Details={Var Name=Random_Equipment Details}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="353c796b-6c17-4014-88a5-6dff5a4fbf12" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActSetVariableValue Active="True" Description="Set IMEI" Guid="5f04fe8b-7bcb-4b1f-a30a-bfdae4c225bc" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="f462fceb-553a-4faa-a47b-669e65b823f1" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IMEI NO={Var Name=Random_ IMEI}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="46dd2291-728d-4fcb-bd9e-61d0a24daa81" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_ IMEI" />
+<ActInputValue Guid="03902590-8011-4344-84c0-29ef7bf301ad" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="95c6857a-ff8c-4df0-bcdc-21d909b5dcb2" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Set Equipment serial number" Guid="6e9f6e55-7702-4ff1-96fb-6af5b4dd1535" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="c42e15eb-4846-4cc8-b245-de93e63dbf4e" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment serial number={Var Name=Random_Equipment serial number}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="0985736b-456e-4516-8bef-8a1352088f8d" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_Equipment serial number" />
+<ActInputValue Guid="7b8d3e70-aa22-435f-959c-632f3a5ad4bf" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="edd8e9dc-98ca-4813-97d9-f1f2ed46556d" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActDummy Active="True" Description="Set MAC Address" Guid="29ba6fae-a012-424e-a666-6e3aeb284d7c" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="116beef3-660e-4885-b73a-7b5a2e27c90d" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="MAC Address={Var Name=Random_MAC Address}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="63968813-c85d-4259-9c56-450ccce57c20" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="8cf0e644-41f0-48e0-bb59-d971528addcd" InitialStringValue="SelfServices" MandatoryInput="True" MappedOutputType="None" Name="SalesChannel" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="7e41e52c-364f-48a8-a038-c847e692ba45" InitialStringValue="130350702011" MandatoryInput="True" MappedOutputType="None" Name="ServiceAddressId" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="cf0734ed-4720-4079-b644-d05f1a1fbf60" InitialStringValue="WBBPlan" MandatoryInput="True" MappedOutputType="None" Name="ProductOfferingTypeGroup" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="d174b408-2746-4272-a7b7-ee57648bdb25" InitialStringValue="FALSE" MappedOutputType="None" Name="Disableabilitycheck" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="b2bd218c-5d9b-4006-8908-c5c6580093cc" InitialStringValue="FALSE" MappedOutputType="None" Name="CheckQualification" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableSelectionList Guid="7f4f14b1-c908-4ceb-a44f-dd8ae68c8855" MappedOutputType="None" Name="Equipment Name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" Value="Equipment1">
+<OptionalValuesList>
+<OptionalValue Guid="b69a5de5-bf40-459e-bdfa-8c8a27e9bcef" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="d6e71188-8540-4778-89ab-e8443470f7e3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment1" />
+<OptionalValue Guid="edb77dc9-bcdc-4f78-a6d3-44c28332eab9" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment2" />
+<OptionalValue Guid="6155bb76-8349-41a0-9761-496f3321bccb" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment3" />
+<OptionalValue Guid="dd7c7741-e29f-4761-a689-5d031000db8e" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment4" />
+<OptionalValue Guid="258b32c4-6226-4d40-b86a-09bbb1cda2d5" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment5" />
+<OptionalValue Guid="4732e694-1b4a-4790-a669-877b2ad2ffe0" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment6" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableString Guid="5dcfe176-94a1-42b6-a8ed-756925798b46" InitialStringValue="Equipment type" MappedOutputType="None" Name="Equipment Details" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="3011a400-abd4-4489-931c-105f9715905f" InitialStringValue="636199957478993" MappedOutputType="None" Name="IMEI NO" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="97cd4be7-ad28-42ba-a6c9-35995a91614c" InitialStringValue="27744918" MappedOutputType="None" Name="Equipment serial number" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="0086ad76-8dc9-4d16-9390-36895004ead5" InitialStringValue="1234" MappedOutputType="None" Name="MAC Address" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="c227e59a-2c60-4f4c-9882-09882db20b3c" InitialStringValue=" true" MappedOutputType="None" Name="IncludeAllNodes" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableSelectionList Guid="81f9d96f-b2f1-4091-9fff-63f8463d8164" MappedOutputType="None" Name="Random_Equipment Name" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" Value="Equipment1">
+<OptionalValuesList>
+<OptionalValue Guid="b69a5de5-bf40-459e-bdfa-8c8a27e9bcef" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="d6e71188-8540-4778-89ab-e8443470f7e3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment1" />
+<OptionalValue Guid="edb77dc9-bcdc-4f78-a6d3-44c28332eab9" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment2" />
+<OptionalValue Guid="6155bb76-8349-41a0-9761-496f3321bccb" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment3" />
+<OptionalValue Guid="dd7c7741-e29f-4761-a689-5d031000db8e" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment4" />
+<OptionalValue Guid="258b32c4-6226-4d40-b86a-09bbb1cda2d5" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment5" />
+<OptionalValue Guid="4732e694-1b4a-4790-a669-877b2ad2ffe0" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment6" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableRandomString Guid="c5113ecb-f316-4b85-978f-ba6810ab55c1" IsDigit="True" MappedOutputType="None" Max="15" Min="15" Name="Random_ IMEI" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableRandomString Guid="9215cd67-be79-4ded-9924-2f840ce57e13" IsDigit="True" MappedOutputType="None" Max="8" Min="8" Name="Random_Equipment serial number" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="cbdde82f-9422-49c9-8666-df77b04ac449" InitialStringValue="Equipment type" MappedOutputType="None" Name="Random_Equipment Details" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="6e63d722-b5ae-483c-a7d8-8a0fe400eea0" InitialStringValue="1234" MappedOutputType="None" Name="Random_MAC Address" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity></GingerRepositoryItem>

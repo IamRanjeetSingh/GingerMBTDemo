@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="89a10dab-636c-4fe1-8b71-46e28078f488" ItemType="Activity" CreatedBy="meni" Created="202206061021" GingerVersion="4.4.0.0" Version="5" LastUpdateBy="MENIK" LastUpdate="202302202159" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Discovery for WBB Plan" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="89a10dab-636c-4fe1-8b71-46e28078f488" Mandatory="True" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Catalog One" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Discovery for WBB Plan" Guid="019f3bb9-88a0-4aeb-882a-f1b089320cd8" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="c699fd39-a8dc-4fb8-a44d-000c27fa629f" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set plan name" Guid="6e36b130-126e-4a78-86c2-7d4f522d04d7" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="9a08454f-143f-45ba-bc85-0ed55d82bec0" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB Plan Name={Var Name=Random_WBB Plan Name}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="57b96c17-766c-41f8-bbef-091fd9ef62b3" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set WBB Plan details" Guid="fd74bb37-e7d7-4646-9b4f-1727b2f2cfb4" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="12a49eca-ae74-4b48-a566-043faa22793a" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB Plan details={Var Name=Random_WBB Plan details}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="a13cc6a5-3b6d-49e3-b336-0bf617eddf19" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set WBB Plan Price" Guid="e5f2a203-396f-4363-92b0-fbdcb56ac187" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="fac81830-d57c-4573-beaf-4cdfc0481fb5" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB Plan Price={Var Name=Random_WBB Plan Price}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="3c957912-5b86-404f-9aaa-f32f5ecc2553" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="6c98e82d-a6aa-4a6d-8ece-6856ab66fe98" InitialStringValue="SelfServices" MandatoryInput="True" MappedOutputType="None" Name="SalesChannel" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="ca58c3ae-8415-4fe9-ad66-3f70323c6ec5" InitialStringValue="130350702011" MandatoryInput="True" MappedOutputType="None" Name="ServiceAddressId" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="f3e66919-e044-4adb-9fbd-5120485bedd3" InitialStringValue="WBBPlan" MandatoryInput="True" MappedOutputType="None" Name="ProductOfferingTypeGroup" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="d04dba61-5433-4bd6-bc24-572924edcf99" InitialStringValue="FALSE" MappedOutputType="None" Name="Disableabilitycheck" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="e336376e-557f-4201-a8e1-e568ab388cd0" InitialStringValue=" true" MappedOutputType="None" Name="IncludeAllNodes" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="1c473909-dcaa-4994-889a-b2ae15b3de41" InitialStringValue="FALSE" MappedOutputType="None" Name="CheckQualification" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableSelectionList Guid="2f911e18-19d3-478c-9fa5-bb64321f58bd" MappedOutputType="None" Name="WBB Plan Name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" Value="WBB with Promo">
+<OptionalValuesList>
+<OptionalValue Guid="6a0c32cd-9a9e-4112-acb0-512b2d448426" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="b2e447cb-8f42-4352-824a-62cf8502ca1d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB Without extender                                                            " />
+<OptionalValue Guid="9ca21a69-38c7-4db4-8c11-66cb9afcca6c" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Extender" />
+<OptionalValue Guid="57e75f9e-ee0b-43c8-ac80-329514d9f633" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Promo" />
+<OptionalValue Guid="cfc9ef7a-d53c-4a3d-9a9e-24a445af1af8" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Annual discount " />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableString Guid="7d081870-093b-4df0-9976-a1ce361e40e9" InitialStringValue="WBB with Promo" MappedOutputType="None" Name="WBB Plan details" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableSelectionList Guid="4db5be49-a824-45b8-928d-caaa8a643fac" MappedOutputType="None" Name="WBB Plan Price" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" Value="30$">
+<OptionalValuesList>
+<OptionalValue Guid="a58da45a-3e20-426d-b781-45ee3db6f790" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="5d3f39ba-94d5-419b-a8d0-3de4d4e12a3d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="40$" />
+<OptionalValue Guid="9f91ffef-de0f-4da0-9576-9e086daaf451" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30$" />
+<OptionalValue Guid="da96258f-b837-4145-adaf-aa42d8230e03" ParentGuid="00000000-0000-0000-0000-000000000000" Value="25$" />
+<OptionalValue Guid="7d662d6e-668e-48aa-a9c6-1c3715e64d06" ParentGuid="00000000-0000-0000-0000-000000000000" Value="50S" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableSelectionList Guid="99eb7f71-bacf-4863-9936-479fc3a7e71a" MappedOutputType="None" Name="Random_WBB Plan Name" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" Value="WBB with Promo">
+<OptionalValuesList>
+<OptionalValue Guid="6a0c32cd-9a9e-4112-acb0-512b2d448426" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="b2e447cb-8f42-4352-824a-62cf8502ca1d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB Without extender                                                                " />
+<OptionalValue Guid="9ca21a69-38c7-4db4-8c11-66cb9afcca6c" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Extender" />
+<OptionalValue Guid="57e75f9e-ee0b-43c8-ac80-329514d9f633" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Promo" />
+<OptionalValue Guid="cfc9ef7a-d53c-4a3d-9a9e-24a445af1af8" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Annual discount " />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableString Guid="a920f1c3-1e41-438b-acf9-2d02f0642d53" InitialStringValue="WBB with Promo" MappedOutputType="None" Name="Random_WBB Plan details" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableSelectionList Guid="f7a9f9a1-46c6-4627-a86b-fbd16635979e" MappedOutputType="None" Name="Random_WBB Plan Price" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" Value="30$">
+<OptionalValuesList>
+<OptionalValue Guid="a58da45a-3e20-426d-b781-45ee3db6f790" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="5d3f39ba-94d5-419b-a8d0-3de4d4e12a3d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="40$" />
+<OptionalValue Guid="9f91ffef-de0f-4da0-9576-9e086daaf451" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30$" />
+<OptionalValue Guid="da96258f-b837-4145-adaf-aa42d8230e03" ParentGuid="00000000-0000-0000-0000-000000000000" Value="25$" />
+<OptionalValue Guid="7d662d6e-668e-48aa-a9c6-1c3715e64d06" ParentGuid="00000000-0000-0000-0000-000000000000" Value="50S" />
+</OptionalValuesList>
+</VariableSelectionList>
+</Variables>
+</Activity></GingerRepositoryItem>

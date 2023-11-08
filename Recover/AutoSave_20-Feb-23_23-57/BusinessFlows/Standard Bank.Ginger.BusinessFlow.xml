@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="14e27021-bf75-416a-a74f-11b3f2a035c1" ItemType="BusinessFlow" CreatedBy="ITSIKD" Created="202302190936" GingerVersion="4.4.0.0" Version="1" LastUpdateBy="ITSIKD" LastUpdate="202302190936" />
+<BusinessFlow Elapsed="71920" Guid="14e27021-bf75-416a-a74f-11b3f2a035c1" Name="Standard Bank" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Home page" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="f0ddb72f-092e-4b25-bd09-baf66cd17c0d" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="Customer Creation System" Type="Regular">
+<Acts>
+<ActBrowserElement Active="True" Description="Browser Action" Guid="2e652f23-eb45-431b-9331-c380a71d1903" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="67bef897-87b2-4594-92a6-8117a8d4def2" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
+<ActInputValue Guid="c0f2d66b-2b3a-499f-96ca-63001890ee70" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="https://www.standardbank.com/#" />
+<ActInputValue Guid="822d21fd-9142-4969-90a1-3fb86e03f676" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="05ce8cd3-a5b5-458b-93d3-04ed39b5744f" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="ac7a504d-f8f7-4ab3-81f4-3b815e653641" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="803f811e-ccb9-4014-befb-b9a1937454c2" Param="eMonitorUrl" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AllUrl" />
+<ActInputValue Guid="56924d77-5b47-4518-9aec-2cd8076d6123" Param="eRequestTypes" ParentGuid="00000000-0000-0000-0000-000000000000" Value="All" />
+<ActInputValue Guid="3a23b673-0958-4400-b65a-4321465ae8b9" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="e114ab69-daf1-4053-9d0d-2379e123975a" Param="ImplicitWait" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c666fef2-f253-453e-b61f-d6cea8683149" Param="NetworkLog" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="038dd0d2-719f-4db9-be9e-79e8abe44af5" Param="NetworkUrl" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="1a42a2f6-0897-4005-91bb-dbca45697605" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+<ActUIElement Active="True" Description="Click - a_5" Guid="0f573acb-f0d8-4984-9b25-8e8fe3bce071" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="aabfd33f-2fd6-4aa8-b8ed-b06d65bf3e88" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="32dd3c6d-b673-4ed6-8842-fc1ba4ba46af" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="71154a02-800b-4110-85c0-9f1b82153a29" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="c541002a-dbfa-457d-86d2-0f489348bcda_4d0a53c7-c3ff-41c9-88db-cbe9d438f55c" />
+<ActInputValue Guid="daf84d7f-7b51-423a-9ce5-855e5074d5fe" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="HyperLink" />
+<ActInputValue Guid="265ca2de-5ed1-43b2-85ee-4fb21c803a6a" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="30961f58-1af6-41fe-bc3b-81b235f663da" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="afe93421-58b0-4dc5-b2d5-fb173fa05617" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="95269ee5-bcb1-422c-94d3-d1e915e02223" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="7122f484-6aa4-4076-8aba-fa1b60e8762a" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Login Page" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="bc7822a9-01fd-46db-be6a-04b74bed73e0" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="Customer Creation System" Type="Regular">
+<Acts>
+<ActUIElement Active="True" Description="SetText - Utilizador" Guid="a6855f74-f034-421f-b89e-c175eed4eff2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="31689ee1-03f9-46bb-8db9-90e00a276bc5" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="a225bd2d-e816-4113-b057-2f13b8d0d769" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="d5e52dca-3720-409f-9dc7-64975f2a86d0" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="857647ee-1bc6-4916-b905-39cab78898df_3d422776-ee39-4beb-be76-87fb4764ebe8" />
+<ActInputValue Guid="5c4aa71c-7760-4f90-a9a9-bdc511d768ba" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="8e46ca2d-1ad1-49c2-ba31-ecbc2c11b631" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Itsik" />
+<ActInputValue Guid="22ccddde-da61-4a2b-8ee5-6c58d0d1b50e" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="ac441d57-f778-4568-85cc-e4cde58f5c90" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="fdb61d9a-00a4-4066-a87c-77a076b1318b" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="5419ccf8-293c-4fc7-8df7-3a6ea838a18c" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="SetText - input Código de Acesso" Guid="0ee52ac8-b05f-427f-a166-e90b5dab3d53" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="bd6551f8-cd5a-4b8c-99fd-831ee66f08a1" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="bb46630e-feea-40c3-afa4-005cddd1794f" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="ad91da05-34cb-45c0-a584-7f099d6660be" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="857647ee-1bc6-4916-b905-39cab78898df_eab17347-784a-4702-b07e-32c88f8ab267" />
+<ActInputValue Guid="d2cc3734-9e19-4dc3-9e91-fec731fb9ce1" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="a34c4b28-3651-48bc-8c3a-9af668fc3285" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="David" />
+<ActInputValue Guid="cd68c733-07f8-485f-93ab-e3351e0d8786" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="e1489b9d-8083-4d59-863c-459937321d19" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="f424694b-8ecb-4f02-994f-be28376b7799" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="1cbf3094-176b-4c3e-915e-d6bae444ea24" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Click - input button btnLogin Enviar" Guid="ca55ec5f-ee68-49b0-9ba9-d1965d9cc1e0" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="ce1cc31a-d3e2-4c7d-a852-5cdbc6f239e2" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
+<ActInputValue Guid="c134fd33-6e02-4974-bebc-666b78c6f380" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="f6a91607-f4e7-4dc8-8724-b802253e0a0d" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="857647ee-1bc6-4916-b905-39cab78898df_bccb6d0d-5ad5-4a9f-ac99-f77b6f2be10a" />
+<ActInputValue Guid="8410a24d-0060-478b-9f37-d108f9973628" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Button" />
+<ActInputValue Guid="97d84c42-e25b-46b3-ae7b-dca87b957244" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="07d2a13f-3afb-4913-8c65-1bbdafa7e353" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="820fdbe1-3c64-4d83-a505-fdccf0aa45a7" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="b21b2c0a-ef53-4a67-974e-3fcb94d362dc" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="25dcc45a-cb07-4ba4-b36d-cba6ce777d74" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+</Acts>
+</Activity>
+<Activity ActivitiesGroupID="Group" ActivityName="Balance Inquery" Guid="bc6637b3-7334-4d8a-a83f-f22a69bf5fcc" ParentGuid="bc6637b3-7334-4d8a-a83f-f22a69bf5fcc" Type="Link" />
+<Activity ActivitiesGroupID="Group" ActivityName="Compliance Request" Guid="e84adfb9-15e0-48c9-9650-2f2ed85a9cf3" ParentGuid="e84adfb9-15e0-48c9-9650-2f2ed85a9cf3" Type="Link" />
+<Activity ActivitiesGroupID="Group" ActivityName="Payment Credit Transfer" Guid="c66950a3-3dbf-4471-992b-6084fc2e740e" ParentGuid="c66950a3-3dbf-4471-992b-6084fc2e740e" Type="Link" />
+<Activity ActivitiesGroupID="Group" ActivityName="Payment request for cancellation" Guid="d5bfb274-4f6e-48bd-86bd-a8d2067a9fb9" ParentGuid="d5bfb274-4f6e-48bd-86bd-a8d2067a9fb9" Type="Link" />
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="0e7fb3f8-84fc-4de3-b60e-54d4d2a714a4" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="f0ddb72f-092e-4b25-bd09-baf66cd17c0d" ActivityName="Home page" Guid="1e967807-3847-4056-9131-48108f17922e" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="bc7822a9-01fd-46db-be6a-04b74bed73e0" ActivityName="Login Page" Guid="0b9a35e4-9464-4578-8de2-f81dd04c2660" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="bc6637b3-7334-4d8a-a83f-f22a69bf5fcc" ActivityName="Balance Inquery" Guid="fdee8f6c-b223-4a4f-a962-5fa1a4fd0eb9" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="e84adfb9-15e0-48c9-9650-2f2ed85a9cf3" ActivityName="Compliance Request" Guid="30dab331-7aba-4969-822a-fe950e2081fa" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="c66950a3-3dbf-4471-992b-6084fc2e740e" ActivityName="Payment Credit Transfer" Guid="9d702854-a4b3-4c34-9bf2-05f001759ffd" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="d5bfb274-4f6e-48bd-86bd-a8d2067a9fb9" ActivityName="Payment request for cancellation" Guid="205e8828-c121-477d-a901-21d93093b76e" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="Payment" Guid="ad17171f-5222-40a3-ab95-f51b676a18d1" LastExecutingAgentName="OrdersSystemService" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Balance" Guid="eb4350cf-d5f7-4ae2-ac06-ae6c42f4469c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Immediate Scheme" Guid="1441f553-e77a-4982-8975-484c12e730c9" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Compliance" Guid="bfdba1cd-8829-4af6-b1af-4b57f0e8e819" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Customer Creation System" Guid="0e52eaa7-11c1-4560-957b-30a22348cfe9" LastExecutingAgentName="Chrome" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>

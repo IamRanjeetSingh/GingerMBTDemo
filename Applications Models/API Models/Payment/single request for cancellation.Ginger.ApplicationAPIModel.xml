@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="42f304f4-fd95-4fcd-98fc-edfb0b827939" ItemType="ApplicationAPIModel" CreatedBy="ITSIKD" Created="202302151344" GingerVersion="4.4.0.0" Version="2" LastUpdateBy="ITSIKD" LastUpdate="202302151355" />
+<ApplicationAPIModel APIType="REST" AuthorizationType="NoAuthentication" CertificateType="AllSSL" ContentType="JSon" CookieMode="Session" EndpointURL="https://api.fusionfabric.cloud/payment/payment-initiation/realtime-payments/v2/payment-request/&lt;{PAYMENTREQUESTID}&gt;/cancel" Guid="42f304f4-fd95-4fcd-98fc-edfb0b827939" Name="single request for cancellation" NetworkCredentials="Default" ParentGuid="00000000-0000-0000-0000-000000000000" ReqHttpVersion="HTTPV10" RequestBodyType="FreeText" RequestType="POST" ResponseContentType="JSon" SecurityType="None" TargetApplicationKey="Payment~4327fc9c-c653-49df-a9f8-8eaca21244a2" URLDomain="https://api.fusionfabric.cloud/payment/payment-initiation/realtime-payments/v2">
+<AppModelParameters>
+<AppModelParameter Description="{paymentRequestId}in url" Guid="c5f6b930-add1-4760-a30c-271fa9d79020" ParentGuid="00000000-0000-0000-0000-000000000000" PlaceHolder="&lt;{PAYMENTREQUESTID}&gt;" />
+</AppModelParameters>
+
+<ReturnValues>
+<ActReturnValue DoNotConsiderAsTemp="True" Guid="ce979442-8a90-4a78-b24b-e31905a2b1a4" Operator="Legacy" Param="&lt;PAYMENTRESOURCEID&gt;" ParentGuid="00000000-0000-0000-0000-000000000000" Path="paymentResourceId" StoreTo="None" />
+<ActReturnValue DoNotConsiderAsTemp="True" Guid="b05b72f7-c3ac-41a2-945c-d6e61322aa39" Operator="Legacy" Param="&lt;STATUS&gt;" ParentGuid="00000000-0000-0000-0000-000000000000" Path="status" StoreTo="None" />
+</ReturnValues>
+</ApplicationAPIModel></GingerRepositoryItem>

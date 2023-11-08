@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="50d98317-1eea-4fc0-93f2-a8e1104a7301" ItemType="RunSetConfig" CreatedBy="meni" Created="202206060824" GingerVersion="4.4.0.0" Version="2" LastUpdateBy="meni" LastUpdate="202206060836" />
+<RunSetConfig Guid="50d98317-1eea-4fc0-93f2-a8e1104a7301" Name="Default Run Set" ParentGuid="00000000-0000-0000-0000-000000000000">
+<CategoriesDefinitions>
+<SolutionCategoryDefinition Category="Product" Guid="589d1ad8-5877-4122-9825-fa868da62580" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="TestType" Guid="eff9931d-563b-44c6-9cd4-891a4b0131c4" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="Release" Guid="bd293485-d1da-488c-9324-e440b640990d" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="Iteration" Guid="bd5ac950-b934-4502-bba0-0ef57ad8b72a" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="UserCategory1" Guid="6e1d0cbd-1184-46df-ba08-445b0b7d32fb" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="UserCategory2" Guid="ed25624e-1b5e-4db9-9193-9194871573ce" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="UserCategory3" Guid="482816d6-4684-41a8-9445-4a0a85350512" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+</CategoriesDefinitions>
+
+<GingerRunners>
+<GingerRunner Guid="472a42fd-e58f-4f3f-bcd5-035f11057832" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
+<ApplicationAgents>
+<ApplicationAgent AgentID="db815932-1bfb-43cf-ba62-c13f15b215fd" AgentName="Chrome" AppID="474440d5-eefd-4a24-945e-1df377bd3fce" AppName="Customer Creation System" Guid="6cd79c5a-4304-4ac6-a7bd-e24212273a2d" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ApplicationAgents>
+
+<BusinessFlowsRunList>
+<BusinessFlowRun BusinessFlowGuid="5d4cbcd3-f036-42f7-8bba-1089a35aceac" BusinessFlowInstanceGuid="8911341d-a5f6-4522-8dfc-094340d783a5" BusinessFlowIsActive="True" BusinessFlowName="TestALM_Jinendra" Guid="317f2afe-6f79-4ff7-85fa-245341539284" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</BusinessFlowsRunList>
+</GingerRunner>
+</GingerRunners>
+
+<RunSetActions>
+<RunSetActionPublishToQC ALMTestSetLevel="RunSet" Condition="AlwaysRun" ExportType="EntitiesAndResults" FilterStatus="All" Guid="ee0b923a-ab7c-46a5-98eb-048f219d6409" isVariableInTCRunUsed="True" Name="Publish Execution Results to ALM" ParentGuid="00000000-0000-0000-0000-000000000000" PublishALMType="Jira" RunAt="ExecutionEnd" toAttachActivitiesGroupReport="True" VariableForTCRunName="GingerRun_{CS Exp=DateTime.Now}">
+<AlmFields>
+<ExternalItemFieldBase Guid="7b6647ec-8389-4ffc-b1d3-943ba0ebda1a" ID="Reporter" ItemType="TEST_SET" Mandatory="True" Name="Reporter" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValue="menik" ToUpdate="True" />
+<ExternalItemFieldBase Guid="6ba41154-5900-4174-b8a4-0a10859376ff" ID="Reporter" ItemType="TEST_CASE" Mandatory="True" Name="Reporter" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValue="menik" ToUpdate="True" />
+<ExternalItemFieldBase Guid="bae8bdd4-2467-4b64-9165-83b59b70060e" ID="Reporter" ItemType="TEST_EXECUTION" Mandatory="True" Name="Reporter" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValue="menik" ToUpdate="True" />
+</AlmFields>
+</RunSetActionPublishToQC>
+</RunSetActions>
+
+<SelfHealingConfiguration>
+<SelfHealingConfig EnableSelfHealing="True" Guid="364edc90-963b-45c7-86af-ca1fdb5dc88c" ParentGuid="00000000-0000-0000-0000-000000000000" ReprioritizePOMLocators="True" />
+</SelfHealingConfiguration>
+</RunSetConfig></GingerRepositoryItem>

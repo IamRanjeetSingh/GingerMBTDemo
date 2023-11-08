@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="2b1ca3e4-a560-4f05-b074-ec575b510634" ItemType="Activity" CreatedBy="meni" Created="202206061021" GingerVersion="4.4.0.0" Version="4" LastUpdateBy="MENIK" LastUpdate="202302202159" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Customer and Account creation " AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="2b1ca3e4-a560-4f05-b074-ec575b510634" Mandatory="True" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Caas" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Get Customer Information" Guid="e3d87ca7-299b-4f57-af2d-5324fad128d6" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d817bc1a-f684-45ad-a13a-0d3327aef133" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=Random_Customer_ID}" />
+</InputValues>
+</ActDummy>
+<ActSetVariableValue Active="True" Description="Generate Customer ID" Guid="395d2761-6b49-4daa-9cc6-eb0641699da1" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="b18e3009-cf91-41f2-ae00-1e0bdafaff67" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer ID={Var Name=Random_Customer_ID}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="5e5da379-ebac-4c41-a2bd-6244603b68f7" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_Customer_ID" />
+<ActInputValue Guid="223a1be3-5e81-4b07-b06e-2989fa422da9" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="bfdaae28-ebad-4a8c-88a1-32f5a9ee3d4b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Generate Billing Account Number" Guid="5a85fc91-59d0-4147-bb8f-2919fc17173f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="9867b1f5-f9c1-4c79-b3ad-68a731dfabc7" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Billing AccNo={Var Name=Random_billingno}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="2a4fbb3a-1af6-4bc9-a7a5-a124e966314c" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_billingno" />
+<ActInputValue Guid="6e7861e3-30c0-454a-9d06-800e57cc6f6d" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="c8122966-c905-4cb4-abed-7ac4c9e561a4" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Generate Place ID" Guid="e6d56752-7053-4ff1-b1ee-2662c8c10e67" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="b25ec20f-ab6f-481f-9844-5577b2d8d9d0" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Place ID={Var Name=Random_Place ID}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="8e343e30-09bf-4278-87f0-facf2fdb99a9" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_Place ID" />
+<ActInputValue Guid="01feb095-7ce9-4e3d-82c0-199dedf1e166" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="9c464ceb-8e4c-4829-8ef7-68448caffd07" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActDummy Active="True" Description="Set Billing Address" Guid="134a33cf-2cab-4b64-8b4e-91f289fb6b2c" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="21c0a955-2d54-4997-9db9-da379db50638" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Billing Address={Var Name=Random_Billing Address}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="27f3b306-ef57-430a-99af-6d613cf5ba8f" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Address" Guid="6a681311-d1b3-4427-98ce-792de6456b23" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="2caf6265-4b7c-46fa-a497-598c3ed0d54e" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Address={Var Name=Random_Address}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="9d1cd053-48ea-47a5-99bf-8b405abb4469" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="da1b9245-99f5-463a-a9b7-afc01989b6d2" InitialStringValue="179387" MandatoryInput="True" MappedOutputType="None" Name="Customer ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="f42b2f5d-8b15-4897-95b2-453e1b377e26" InitialStringValue="John Doe" MandatoryInput="True" MappedOutputType="None" Name="Customer Name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="60ff4219-f51b-4984-aa8d-5d75194a703c" InitialStringValue="(409) 512-6656" MappedOutputType="None" Name="Customer Phone" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="4e450572-fb66-4a82-9d43-93c5ea1b02d2" InitialStringValue="John.Doe@gmail.com" MappedOutputType="None" Name="Customer Email" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="ff48903f-8dda-4559-aac1-766438cd5694" InitialStringValue="56562" MappedOutputType="None" Name="Place ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="a362aa02-cb60-42cb-817d-2ac6af1264a7" InitialStringValue="17506 Golf Club Dr, Crosby, Texas(TX), 77532" MappedOutputType="None" Name="Address" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="f0b38b39-f5bd-4b9d-a260-e01e235ecd48" InitialStringValue="78786765" MappedOutputType="None" Name="Billing AccNo" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="bd983f4a-4c51-46ee-ade4-8c01059d49fa" InitialStringValue="17506 Golf Club Dr, Crosby, Texas(TX), 77532" MappedOutputType="None" Name="Billing Address" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableRandomNumber Guid="a28cdcf9-e294-4558-ab80-edf1499d8278" Interval="1" IsInteger="True" MappedOutputType="None" Max="500000" Min="10000" Name="Random_Customer_ID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableRandomString Guid="5f0d4108-73cc-43b9-a280-1733e13b16e8" IsDigit="True" MappedOutputType="None" Max="8" Min="8" Name="Random_billingno" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableRandomString Guid="d7ad5cc2-8548-4309-8470-7988e1f09386" IsDigit="True" MappedOutputType="None" Max="6" Min="6" Name="Random_Place ID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="55b2171d-20d1-4c02-b8ac-1cc81f101540" InitialStringValue="CONAI ,20122 Milano /ITALY" MappedOutputType="None" Name="Random_Billing Address" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="d004932e-18f8-4704-8d20-db0fdff5cd1b" InitialStringValue="123546 Silver Club Dr, Crosby, California , 77532" MappedOutputType="None" Name="Random_Address" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity></GingerRepositoryItem>

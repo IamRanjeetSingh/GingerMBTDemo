@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="d5bfb274-4f6e-48bd-86bd-a8d2067a9fb9" ItemType="Activity" CreatedBy="ITSIKD" Created="202302151353" GingerVersion="4.4.0.0" Version="4" LastUpdateBy="MENIK" LastUpdate="202302202159" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Payment request for cancellation" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="d5bfb274-4f6e-48bd-86bd-a8d2067a9fb9" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Payment" Type="Regular">
+<Acts>
+<ActWebAPIModel Active="True" Description="single request for cancellation- API Model Execution" Guid="08ceb7f9-7947-48ef-96e4-7b72e71e2127" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Description="{paymentRequestId}in url" Guid="2bbb7433-2977-4d23-9b74-88aa25e82a09" Param="&lt;{PAYMENTREQUESTID}&gt;" ParamGuid="c5f6b930-add1-4760-a30c-271fa9d79020" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="bf916086-3551-4196-8b64-c96c72e46431" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="42f304f4-fd95-4fcd-98fc-edfb0b827939" />
+</InputValues>
+</ActWebAPIModel>
+</Acts>
+</Activity></GingerRepositoryItem>

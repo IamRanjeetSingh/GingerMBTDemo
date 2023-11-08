@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="bc6637b3-7334-4d8a-a83f-f22a69bf5fcc" ItemType="Activity" CreatedBy="ITSIKD" Created="202302151353" GingerVersion="4.4.0.0" Version="4" LastUpdateBy="MENIK" LastUpdate="202302202159" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Balance Inquery" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="bc6637b3-7334-4d8a-a83f-f22a69bf5fcc" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Balance" Type="Regular">
+<Acts>
+<ActWebAPIModel Active="True" Description="Sending a balance inquiry request- API Model Execution" Guid="e7829d70-dc35-4c78-943a-384e76ccaba0" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="5fec7484-49bc-453e-b412-77d2cfb99aa5" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="b55e4354-a96b-4010-b19e-3c81995909df" />
+</InputValues>
+</ActWebAPIModel>
+</Acts>
+</Activity></GingerRepositoryItem>

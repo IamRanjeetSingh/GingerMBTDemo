@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="42700092-a6d0-41b4-9442-0339ef139ec9" ItemType="ProjEnvironment" CreatedBy="MENIK" Created="202001152024" GingerVersion="4.3.0.0" Version="30" LastUpdateBy="hirals" LastUpdate="202205131205" />
+<ProjEnvironment Guid="42700092-a6d0-41b4-9442-0339ef139ec9" Name="Sanity" ParentGuid="00000000-0000-0000-0000-000000000000">
+<Applications>
+<EnvApplication Active="True" Guid="1085385c-8a9c-447c-a0ee-ec51dfdd8e22" Name="SOM" ParentGuid="00000000-0000-0000-0000-000000000000">
+<Dbs>
+<Database ConnectionString="Server=inpnqginger01;Port=5432;Database=TestDB;User Id=postgres;Password=postgres;" DBType="PostgreSQL" Guid="1d046d1a-5634-4eb2-bb86-fe2d48327998" KeepConnectionOpen="False" Name="New" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</Dbs>
+
+<GeneralParams>
+<GeneralParam Guid="6d1b19c4-ba34-4bb5-a266-e0696bd09194" Name="URL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="http://demo.guru99.com/" />
+</GeneralParams>
+</EnvApplication>
+</Applications>
+</ProjEnvironment></GingerRepositoryItem>

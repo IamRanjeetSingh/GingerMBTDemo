@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="912f246e-063f-47b3-9bb1-5f37840c3215" ItemType="Activity" CreatedBy="hirals" Created="202205201002" GingerVersion="4.4.0.0" Version="5" LastUpdateBy="hirals" LastUpdate="202206071322" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Get Product order" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="912f246e-063f-47b3-9bb1-5f37840c3215" Mandatory="True" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="RTB - Amdocs Real Time Billing" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Get Product order" Guid="78add7ec-69b5-48c5-a897-4a4e760a3e1d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d471fc49-c7a3-4493-b7a3-752bfcbba4ee" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Tax Charge" Guid="ecb2f0ce-eea3-4542-9e6f-e8bb0b1f9acf" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="0a2810c3-70b9-4cb5-bb71-0f36c19b0fbe" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Taxes Charge={Var Name=Random_Taxes Charge}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="a694cf80-66f5-4813-93d7-bc558c0e77b1" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Order Prorate Charge" Guid="48246219-a4b5-4352-be40-4c5894f57d32" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="7d060e8c-9c51-4c3b-bd69-34680e13e19f" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Order Prorate Charge={Var Name=Random_Order Prorate Charge}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="6d3b01be-ec07-4b5b-ba98-8e3ca4c1c6bf" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Order Monthly charge" Guid="d24a8499-1b86-4056-b336-2d0237620962" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="632da99a-f7d5-4734-83e8-2ed40819bdd6" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Order Monthly Charge={Var Name=Random_Order Monthly Charge}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="cb934aff-5006-40ac-a117-0410f593bd74" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="c2eefaff-c2af-4c50-81c2-be40b72f9f1c" InitialStringValue="78782343" MandatoryInput="True" MappedOutputType="None" Name="OrderID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="449e820c-acfb-40ce-93ab-404f70ec343f" InitialStringValue="FALSE" MandatoryInput="True" MappedOutputType="None" Name="ExcludePrices" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="84d14662-0f6c-4a9a-a771-74a763deba7c" InitialStringValue="TRUE" MappedOutputType="None" Name="ProratedPrices" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="0f8422e9-3911-4113-8e58-54dab16b5bab" InitialStringValue="TRUE" MappedOutputType="None" Name="CalculateTaxInd" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="04f7f576-6f36-4fd3-8d8a-3aca347093bf" InitialStringValue="30$" MappedOutputType="None" Name="Order Monthly Charge" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="4b9468d6-7d64-4a75-aac4-e1bfd13e5651" InitialStringValue="11$" MappedOutputType="None" Name="Order Prorate Charge" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="16e4bea6-f506-4b70-bb97-12bffee48465" InitialStringValue="2.46$" MappedOutputType="None" Name="Taxes Charge" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="1990d07e-84b7-46c3-90fa-63c340c5f757" InitialStringValue="2.46$" MappedOutputType="None" Name="Random_Taxes Charge" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="34b9eaf9-910d-4a50-b8af-9745d02df80b" InitialStringValue="11$" MappedOutputType="None" Name="Random_Order Prorate Charge" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="f6c5710d-6405-44c3-928f-2366f1997421" InitialStringValue="30$" MappedOutputType="None" Name="Random_Order Monthly Charge" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity></GingerRepositoryItem>

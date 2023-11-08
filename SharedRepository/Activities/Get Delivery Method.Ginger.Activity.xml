@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="3912d8de-2b57-45c4-9ccb-8722c5636c2f" ItemType="Activity" CreatedBy="meni" Created="202206061021" GingerVersion="4.4.0.0" Version="2" LastUpdateBy="hirals" LastUpdate="202206071322" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Get Delivery Method" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="3912d8de-2b57-45c4-9ccb-8722c5636c2f" Mandatory="True" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Catalog One" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Get Delivery Method" Guid="d79ed7c7-7cb4-4dd6-bcad-daf75387f2aa" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="dfbcf6d5-5d4f-4958-9483-42740d9814a1" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Delivery Method" Guid="3060b22f-b229-4971-a351-ca46ab91d4b0" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="6e99fa19-ae26-4fbf-ab23-b908b0c23a39" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Delivery Method={Var Name=Random_Delivery Method}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="000aa868-37c0-43b2-83a4-12a1497682fb" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Delivery Cost" Guid="353dfa52-f1d5-4ccb-89b5-fe6ba1deb773" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="8841e712-5688-4c23-a450-4645e6da29ff" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Delivery Cost={Var Name=Random_Delivery Cost}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="4da624bf-3484-4ddb-87c3-933c372812bc" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="7781775e-07da-41ae-9185-653e10bc5e30" InitialStringValue="25252525" MandatoryInput="True" MappedOutputType="None" Name="ProductOrderId" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableSelectionList Guid="b0bcb4fd-6e95-45f2-b8e5-f15a3b8d7743" MappedOutputType="None" Name="Delivery Cost" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" Value="10$">
+<OptionalValuesList>
+<OptionalValue Guid="468a5740-733b-4aa3-98c6-d8fba943af9f" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="3487e815-c3c5-4d69-9004-6a52ac5244ad" ParentGuid="00000000-0000-0000-0000-000000000000" Value="10$" />
+<OptionalValue Guid="0f47c188-e07f-4656-a615-07f5124c5909" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0$" />
+<OptionalValue Guid="6d77f501-2fb2-4b5c-b74e-ac71e63e58d3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="50$" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableSelectionList Guid="a6e73333-f1c9-4cbe-8be5-6e52bae0ff95" MappedOutputType="None" Name="Delivery Method" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" Value="Pickup">
+<OptionalValuesList>
+<OptionalValue Guid="4e0f159d-7dc0-44ed-a26a-e81a099704f4" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="04008a8e-c763-43d8-b1a3-2d2be1d8eea1" ParentGuid="00000000-0000-0000-0000-000000000000" Value="2DaysShipping" />
+<OptionalValue Guid="bb06ee28-5897-4986-b9f8-9b587c9c180d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Pickup" />
+<OptionalValue Guid="8853a2e7-8529-405c-a09c-35f1538471a8" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Overnight" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableSelectionList Guid="d84c983e-86fa-4876-be0a-7ae2c80badf6" MappedOutputType="None" Name="Random_Delivery Cost" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" Value="10$">
+<OptionalValuesList>
+<OptionalValue Guid="468a5740-733b-4aa3-98c6-d8fba943af9f" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="3487e815-c3c5-4d69-9004-6a52ac5244ad" ParentGuid="00000000-0000-0000-0000-000000000000" Value="10$" />
+<OptionalValue Guid="0f47c188-e07f-4656-a615-07f5124c5909" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0$" />
+<OptionalValue Guid="6d77f501-2fb2-4b5c-b74e-ac71e63e58d3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="50$" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableSelectionList Guid="196efb7d-390f-4f7b-9dd7-6fb1ba4526c1" MappedOutputType="None" Name="Random_Delivery Method" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" Value="Pickup">
+<OptionalValuesList>
+<OptionalValue Guid="4e0f159d-7dc0-44ed-a26a-e81a099704f4" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="04008a8e-c763-43d8-b1a3-2d2be1d8eea1" ParentGuid="00000000-0000-0000-0000-000000000000" Value="2DaysShipping" />
+<OptionalValue Guid="bb06ee28-5897-4986-b9f8-9b587c9c180d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Pickup" />
+<OptionalValue Guid="8853a2e7-8529-405c-a09c-35f1538471a8" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Overnight" />
+</OptionalValuesList>
+</VariableSelectionList>
+</Variables>
+</Activity></GingerRepositoryItem>

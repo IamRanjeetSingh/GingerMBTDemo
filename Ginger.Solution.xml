@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="0fa03e5c-02b3-437a-be93-af2a9a944969" ItemType="Solution" CreatedBy="MKALE" Created="202205130840" GingerVersion="4.4.0.0" Version="40" LastUpdateBy="MENIK" LastUpdate="202302202200" />
+<Solution EncryptedValidationString="gBCu9FEYgDA+bxfhZoGf4g==" Guid="0fa03e5c-02b3-437a-be93-af2a9a944969" Name="GingerMBTDemo" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ALMConfigs>
+<ALMConfig AlmType="QC" Guid="9f4664d7-cc19-416a-805b-0ef605e1fe2b" JiraTestingALM="None" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ALMConfig ALMConfigPackageFolderPath="~\\Configurations\JiraConfigurationsPackage" ALMDomain="_NoDomain_" ALMProjectKey="10302" ALMProjectName="GINGERMBT" ALMServerURL="http://99.80.254.65:8080" AlmType="Jira" DefaultAlm="True" Guid="28d22d44-c5d6-48f0-97a2-3454b4d6689b" JiraTestingALM="Xray" ParentGuid="00000000-0000-0000-0000-000000000000" UseRest="True" />
+</ALMConfigs>
+
+<ApplicationPlatforms>
+<ApplicationPlatform AppName="Customer Creation System" Description="Customers creation system" Guid="474440d5-eefd-4a24-945e-1df377bd3fce" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" />
+<ApplicationPlatform AppName="Digital One OC" Description="Digital One system" Guid="5bb65b15-4ef6-4453-8707-9236cae4ce3a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="Customer/Order Graph" Description="Customer/Order Graphy system" Guid="02096d87-e987-41ce-b6b3-1499f5e75866" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="Catalog One" Description="Catalog one system" Guid="4638756a-a204-4887-8354-6a12e9a1d720" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="RTB - Amdocs Real Time Billing" Description="Billing system" Guid="66461ea7-e274-4ebf-8eec-a74783b58e95" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="OTS" Description="OTS system" Guid="ca2f293c-c20e-4a6c-a6b1-45d3e58386c0" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="Digital One OH" Description="OH system" Guid="6f2c63c2-8502-421b-8958-e4d49ae321c8" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="Caas" Description="Caas system" Guid="926dc3b0-9699-46de-b380-1440b9cca249" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="Customer Creation" Description="Customer Creation" Guid="8972ca3a-23d0-499f-88a1-661e9522d444" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="Payment" Description="WebServices Application" Guid="4327fc9c-c653-49df-a9f8-8eaca21244a2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="Balance" Description="WebServices Application" Guid="857fe91f-b26c-40ce-9911-0011f8790c78" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="Immediate Scheme" Description="WebServices Application" Guid="64eab69f-cb20-4837-b57d-5c157b0370ab" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="Compliance" Description="WebServices Application" Guid="614bf662-32ba-4de6-9191-dccfb5b4e33e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+</ApplicationPlatforms>
+
+<ApplitoolsConfiguration>
+<ApplitoolsConfiguration Guid="3fa9b5c2-06d4-404a-a89f-840bc31b95d7" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ApplitoolsConfiguration>
+
+<ExecutionLoggerConfigurationSetList>
+<ExecutionLoggerConfiguration CentralLoggerEndPointUrl="https://gingertest:6001/" DataPublishingPhase="DuringExecution" DeleteLocalDataOnPublish="No" ExecutionLoggerConfigurationExecResultsFolder="~\ExecutionResults" ExecutionLoggerConfigurationIsEnabled="True" ExecutionLoggerConfigurationMaximalFolderSize="250" Guid="14c49159-c8c5-4657-980c-f06a847b18c3" IsSelected="True" ParentGuid="00000000-0000-0000-0000-000000000000" PublishLogToCentralDB="Yes" SelectedDataRepositoryMethod="LiteDB" Seq="0" />
+</ExecutionLoggerConfigurationSetList>
+
+<ExternalItemsFields>
+<ExternalItemFieldBase Guid="5b88e875-60e0-4fdd-97b7-96ecf273caa7" ID="Reporter" ItemType="TEST_SET" Mandatory="True" Name="Reporter" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValue="menik" ToUpdate="True" />
+<ExternalItemFieldBase Guid="64b96184-6e20-44f8-a89a-46a3f26bcf3f" ID="Reporter" ItemType="TEST_CASE" Mandatory="True" Name="Reporter" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValue="menik" ToUpdate="True" />
+<ExternalItemFieldBase Guid="9fda76e7-bee4-412b-a760-41947702083a" ID="Reporter" ItemType="TEST_EXECUTION" Mandatory="True" Name="Reporter" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValue="menik" ToUpdate="True" />
+</ExternalItemsFields>
+
+<HTMLReportsConfigurationSetList>
+<HTMLReportsConfiguration Guid="e9430134-215c-4fd9-86da-c081d87faef5" HTMLReportConfigurationMaximalFolderSize="0" HTMLReportsFolder="~\HTMLReports" HTMLReportTemplatesSeq="1" IsSelected="True" ParentGuid="00000000-0000-0000-0000-000000000000" Seq="0" />
+</HTMLReportsConfigurationSetList>
+
+<SealightsConfiguration>
+<SealightsConfiguration Guid="b2dcf7ac-cd6d-4ab9-98f9-d7405a175d08" ParentGuid="00000000-0000-0000-0000-000000000000" SealightsLog="No" SealightsReportedEntityLevel="BusinessFlow" />
+</SealightsConfiguration>
+
+<SolutionCategories>
+<SolutionCategory Category="Product" Guid="27a27a9f-9643-485b-bb04-9ee63337a598" ParentGuid="00000000-0000-0000-0000-000000000000">
+<CategoryOptionalValues>
+<SolutionCategoryValue Guid="a20269ff-9c03-48d6-a413-963de7317a2d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Product 1" />
+<SolutionCategoryValue Guid="3e159ce6-5b8d-43d4-b631-80d6a8ae0ed2" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Product 2" />
+</CategoryOptionalValues>
+</SolutionCategory>
+<SolutionCategory Category="TestType" Guid="fb97a051-fec9-4f3f-9c7e-ddb78ef0fc09" ParentGuid="00000000-0000-0000-0000-000000000000">
+<CategoryOptionalValues>
+<SolutionCategoryValue Guid="8236253c-87d7-4d68-bb05-bd68037a7cf1" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Regression" />
+<SolutionCategoryValue Guid="8fe3a68c-7f82-48b0-b19c-de8d93e0545b" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Progression" />
+<SolutionCategoryValue Guid="cee8b7c4-236f-4ab3-a785-ae9acdc64ac2" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sanity" />
+<SolutionCategoryValue Guid="d87fd6fc-0347-4c82-a550-4980b1911e05" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Acceptance" />
+<SolutionCategoryValue Guid="63670dab-ec8a-4933-99d1-cc69c3cd2462" ParentGuid="00000000-0000-0000-0000-000000000000" Value="End to End" />
+<SolutionCategoryValue Guid="65e05be5-6182-4670-a70c-c08e64efb60f" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Security" />
+<SolutionCategoryValue Guid="0d905b7a-4efe-4f91-aca3-1692610bf8ff" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Performance" />
+</CategoryOptionalValues>
+</SolutionCategory>
+<SolutionCategory Category="Release" Guid="2557018f-dc0b-42bf-8502-fcfd3f28bbe5" ParentGuid="00000000-0000-0000-0000-000000000000">
+<CategoryOptionalValues>
+<SolutionCategoryValue Guid="e24c5083-5586-46bc-96e7-8d162b8b6109" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Release 1" />
+<SolutionCategoryValue Guid="f83b0271-a759-425d-a3a6-80bf79a527e4" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Release 2" />
+</CategoryOptionalValues>
+</SolutionCategory>
+<SolutionCategory Category="Iteration" Guid="7564b09f-e5d0-4ce0-a3c5-b789ae72d1d6" ParentGuid="00000000-0000-0000-0000-000000000000">
+<CategoryOptionalValues>
+<SolutionCategoryValue Guid="b8552797-51a0-4753-8396-91558fc662c0" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Iteration 1" />
+<SolutionCategoryValue Guid="36a08963-594b-46a8-824a-4b6ce26106f2" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Iteration 2" />
+</CategoryOptionalValues>
+</SolutionCategory>
+<SolutionCategory Category="UserCategory1" Guid="7e96e9c9-8944-40d3-b75e-eec84e757d72" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<SolutionCategory Category="UserCategory2" Guid="86d64397-9d05-47c6-abe9-adcf7f5ef8da" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<SolutionCategory Category="UserCategory3" Guid="920a5d74-825d-44bc-afda-ce3d402317fa" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</SolutionCategories>
+
+<VRTConfiguration>
+<VRTConfiguration FailActionOnCheckpointMismatch="Yes" Guid="35430225-5cb5-4414-99d8-98b5d52bab71" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</VRTConfiguration>
+</Solution></GingerRepositoryItem>

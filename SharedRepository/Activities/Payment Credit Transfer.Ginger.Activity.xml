@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="c66950a3-3dbf-4471-992b-6084fc2e740e" ItemType="Activity" CreatedBy="ITSIKD" Created="202302151353" GingerVersion="4.4.0.0" Version="4" LastUpdateBy="MENIK" LastUpdate="202302202159" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Payment Credit Transfer" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="c66950a3-3dbf-4471-992b-6084fc2e740e" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Payment" Type="Regular">
+<Acts>
+<ActWebAPIModel Active="True" Description="Create Realtime Credit Transfer Payments- API Model Execution" Guid="82a96ee2-22d5-4471-8c5a-ff36cac67216" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="c1f99a0f-a1de-448d-9ca1-056ad4fd6a0b" Param="&lt;INITIATINGPARTY&gt;" ParamGuid="df4e6ffc-1b8b-4e07-a2e4-d46f7e37d4f1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="c1b97682-a437-46b8-8224-6ce1bac2749a" Param="&lt;SOURCEID&gt;" ParamGuid="657d6bb4-45a8-450a-a6ad-bebefcc509cc" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="a486fbb9-92a6-461a-814c-7a69a881d6b0" Param="&lt;PAYMENTINFORMATIONID&gt;" ParamGuid="943bb45a-01cf-40f2-8806-8b55c6de3cd8" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="d44cf26d-b11c-46a1-b9e4-d34e564db5f1" Param="&lt;REQUESTEDEXECUTIONDATE&gt;" ParamGuid="2dc2dc2d-0691-4b27-a289-6dbaba6bf2a9" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="efe209dd-d135-4172-9fd3-7d2d7a6073ca" Param="&lt;AMOUNT&gt;" ParamGuid="94b5f915-1896-486d-88be-46391daed15b" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="a5c930fb-3122-4f0c-8860-1e86c5d5c78b" Param="&lt;CURRENCY&gt;" ParamGuid="052cf073-8cd0-4714-910b-f91225c132ef" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="d79738e0-c8d9-4c25-96d3-e1369fb892b6" Param="&lt;ENDTOENDID&gt;" ParamGuid="02a4f75d-3ac9-4e8d-91f5-a439fb105628" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="ea95a7c7-19e4-4ec6-b6e9-fdfec7b57e6e" Param="&lt;NAME&gt;" ParamGuid="022f720f-5d43-4fc7-8316-d495a982f292" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="31551844-3fa1-42ba-902a-c641673072e3" Param="&lt;IDENTIFICATION&gt;" ParamGuid="3ec2cb23-87b0-4863-8bde-5b8247f08ba4" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="db53d054-4b2f-4b09-bbd5-15c4e5cb77a2" Param="&lt;IDENTIFICATION1&gt;" ParamGuid="a36616a9-3618-459b-b40a-2b7184e51b25" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="87040a3c-efde-4a7b-bde6-b0550b0d9e81" Param="&lt;NAME1&gt;" ParamGuid="2a2bd44e-196c-4c89-8f61-07db01168265" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="842d94a8-34f4-4a4a-b19a-ba1994c1fef0" Param="&lt;IDENTIFICATION2&gt;" ParamGuid="0e7f6796-5309-42a1-baf9-677fdbd3ecc5" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="f52814a4-b854-4177-b55f-2ebf344b49ec" Param="&lt;IDENTIFICATION3&gt;" ParamGuid="33228b72-f4f4-410b-bd0f-30da11c815b1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<EnhancedActInputValue Guid="503dc4f2-82cc-4f35-ad87-7100d119b8ca" Param="&lt;REMITTANCEINFORMATIONUNSTRUCTURED&gt;" ParamGuid="2aae519c-39eb-4325-9302-e6d5866435e9" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="edcb6f88-4ef8-4ecf-b7b5-890f5b5c6049" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="dfc57a43-8df9-4af1-9331-4e59de7824da" />
+</InputValues>
+</ActWebAPIModel>
+</Acts>
+</Activity></GingerRepositoryItem>

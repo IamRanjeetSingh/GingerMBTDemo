@@ -1,0 +1,987 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="1e2499a7-c91a-464c-a0d4-0d7fd9a6d5ce" ItemType="BusinessFlow" CreatedBy="hirals" Created="202205201005" GingerVersion="4.4.0.0" Version="85" LastUpdateBy="hirals" LastUpdate="202206081100" />
+<BusinessFlow Elapsed="43054" Guid="1e2499a7-c91a-464c-a0d4-0d7fd9a6d5ce" Name="MBT_Demo" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Create Customer" AutomationStatus="Automated" Description="Create new Customer in the system" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="1085a561-d436-4786-afc7-307621fb577d" Mandatory="True" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Customer Creation System" Type="Regular">
+<Acts>
+<ActBrowserElement Active="True" Description="Open the Browser" Guid="ad591568-7674-4644-900c-768cbc5d4e56" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a11ad3eb-47a4-4e83-a376-247fd242be0b" Param="ImplicitWait" ParentGuid="00000000-0000-0000-0000-000000000000" Value="60" />
+<ActInputValue Guid="1db6c060-ccf9-4982-9c37-6c4443aa3449" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
+<ActInputValue Guid="5ced1e66-3504-44e6-8358-9ba47e34fd93" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{EnvParam App=SOM Param=URL}" />
+<ActInputValue Guid="c4312803-6d9d-49ca-a8c8-a82d3f4da2f9" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="7d4c3114-5abe-4a87-8884-e30646ddb9c7" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="b87afe20-aa48-437f-8dba-df4eb3f98025" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="b162c19a-cbdf-4fa6-9a3d-5dacd24e6e9a" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="c9a5cfe4-d9e3-4bca-baf8-d7eb42aac105" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+<ActUIElement Active="True" Description="Click - Accept Cookies" Guid="5d0ff3cc-37d1-4fcc-a419-a407ad74aa5e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="IgnoreFail" WaitVE="2" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="9a64a34e-9a3f-4cbd-bdae-5057a1cbec46" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="JavaScriptClick" />
+<ActInputValue Guid="1226d5d9-0a22-4d9b-9333-3d79a83de57e" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="4ab4a54b-56e2-4ed9-acfe-27d7eedceb2c" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="365dd247-88fe-4396-b61a-efdf398d360f_7bcfa07f-4f09-4fa7-b38e-8653a74457c1" />
+<ActInputValue Guid="7be41853-24ce-4958-b72e-648850cd64e3" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="a71056b6-f1f8-46aa-8058-edc0b9f35002" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="5367864b-7817-445f-978d-3d7c2ec5d868" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="30b4a5a2-a1c4-41dc-a2d0-5c645378e43b" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="4207053e-b188-4be5-a8f9-4d359f596905" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="c2d7571b-7e91-4b45-923d-0453526eff10" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="dc8df5f2-e56b-4651-aaec-06e609904e43" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="8a6b66dc-932a-4662-b5ef-accba7b4ce18" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="5f41d98b-f662-465f-9de5-30237cd2c4af" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="9cb85285-fac0-40be-bf78-da4baf4d5eeb" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Click on Telecom Project" Guid="eb66ad13-513b-43e5-b5db-8eb645102213" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="2" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="83ffa3d5-7338-4b43-8381-550af5dd9bc1" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="HyperLink" />
+<ActInputValue Guid="6fdf5371-1641-4e59-a7bb-5d8d6ec2484c" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="JavaScriptClick" />
+<ActInputValue Guid="06322bb2-4d7b-4819-9fa6-da329b055151" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="7813b97e-2415-4b2f-be09-2fc0a23b789a" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="8581fcce-c9a4-4f18-a260-6a7470acb594" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="23379471-0cb5-499a-b545-c9d14ff32a53" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="365dd247-88fe-4396-b61a-efdf398d360f_c1a08771-4127-4c87-9fbf-52591b6e50fb" />
+<ActInputValue Guid="ba4ebb22-1ba6-4dc9-81c4-99c1785e1120" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="675e830d-8f73-417d-a687-3a346ee4b862" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="cf9d9355-4ac2-498d-a9a5-e8018cbb01a5" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="2acf8360-7e98-4c81-a1af-601555a9ff43" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="ad29a58f-50ff-4a01-be22-385eb3edb334" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="39702fd9-cfb4-4b8e-a8c4-13dd507b41bc" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="0472d974-50ce-4684-b83e-38ba3b0e12b3" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Handle popup" EnableRetryMechanism="True" Guid="e32f9f3a-ecbd-4828-9bac-cb5d00bcd190" MaxNumberOfRetries="1" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="3" StatusConverter="IgnoreFail" WaitVE="1" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a8e5d4f9-c7ad-4e3f-9197-50112b763c28" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="0b769ede-942a-44be-a41b-9a3569cd8992" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="JavaScriptClick" />
+<ActInputValue Guid="14031fb5-fe32-4d51-bf89-c489333ddd27" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="b729a723-43c0-4c78-a83d-a026a89dc43e" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="1718d8b0-0bcc-4646-a938-d52998a0516d" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="d4fd627a-9677-43d7-977c-d17e1077f5da" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="881afc28-e5ed-4b3c-9e13-8a509b7320a5_a5c4a177-9ed1-4a72-b24d-d3c38274f9ac" />
+<ActInputValue Guid="1d870e7d-15b7-4ee1-9aac-09b21497dbf4" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="ef761fed-de0c-44db-8b28-82f7c55de984" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="86b1e3bd-3a56-439d-a82c-14120a8cd488" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="563790db-1436-4fc3-864f-6d81d6ebd127" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="7b77a147-bab8-484a-b87c-936bbd8a8887" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="281e566e-929a-4a44-8a56-e3b87a810bf5" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="e476ce99-c690-456e-975e-383da9d0914b" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Click on Add Customer" EnableRetryMechanism="True" Guid="c48454dd-9498-43b2-a5ec-c35d785419de" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="2" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="c69d0791-bd2d-4e80-813a-a3c2bf32e588" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="HyperLink" />
+<ActInputValue Guid="e9e6c637-69b2-49a7-b27f-71c8aac52786" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="JavaScriptClick" />
+<ActInputValue Guid="ea3f337b-e56c-4a0f-9af2-3e9ab013ecee" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="0b2b7366-e8b3-492b-8fdf-304f95a2f31c" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="3b41afc8-c0c1-40a1-82bf-b288b243bd21" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="c684cc77-33d9-427c-9849-d9e2f553e4e4" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="b3f56a7d-edbc-448e-87d5-e555b9ba8b9f_8bec7130-cb0e-4856-80ef-096ab29a6251" />
+<ActInputValue Guid="ed81d7aa-c0c4-41cb-aecd-fbc15471bb26" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="4dc57a4b-8337-4198-b83d-f964da8821f1" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="7f47ae65-775f-4742-bc0c-0389579a0613" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="ed316982-566c-4cfc-9bc7-602574ab61fe" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c9bcfc15-f998-4bdf-a642-287b884cc384" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="820a6ed1-065d-4397-9555-a5a4636b581f" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="1783cf54-a4bb-4092-bf27-75939caed6cb" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Select Background Check Radio Button" Guid="fa0178dd-2dc1-4eaf-b5f7-8e44527f7ac7" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="dfe2dd62-1bc2-4011-a091-7e9943ccb23e" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="fc2ca573-8519-45de-beff-9bf104cceea6" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="JavaScriptClick" />
+<ActInputValue Guid="b30137dd-649f-4524-8a02-daee5e9545d0" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="ec2f91bc-e489-40af-aecb-4cc701c71a98" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="5c7c8974-7c3a-4f6d-b641-03bb84f797a8" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="9386e9ce-592c-4348-8486-8602e1a6a265" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8258e315-50e0-4843-a6d8-d1215af89f3b_0caa03ae-d3e7-49a8-ae52-3a2b45075ec4" />
+<ActInputValue Guid="29b0c120-7fa3-4d7b-a1aa-8ef3518b19cc" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c596017c-79c7-4be8-8283-16d36ddb4920" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="03fb7622-e1f0-4434-b111-0082944f7671" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="8199f59c-b6a4-4fa6-b23b-7531df2cc978" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="03cc7177-97db-4054-b940-1b89d0b427c9" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b3824f32-cc03-4550-a602-c0aae26400fb" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="fb7abaa5-f498-4645-80f2-eb8e33c123fc" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Enter First Name" Guid="0492513e-f851-42d9-8d79-16ca547b0309" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="07ae5711-538d-4684-bc53-b2c632bae5ff" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="1f29772e-962d-4508-9f07-f258ea4fa096" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="e44a4a45-c6a3-4fe5-915e-337c396db89a" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="e3a885c7-8571-49b9-99dc-e9d9bb436d56" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="e1182a79-758e-4396-bc87-8697268eec5d" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="62eac9d8-972c-424a-873f-b26dfb6227d9" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8258e315-50e0-4843-a6d8-d1215af89f3b_edcd5034-55ec-433a-a108-b101582bfbe7" />
+<ActInputValue Guid="5dd56d1c-43f0-4ab5-90e6-ce4705b77876" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="582975ac-8934-4924-b1c8-d4e121a419d3" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=First Name}" />
+<ActInputValue Guid="43b7ebac-48c4-4e85-9c97-82c2ba6d1109" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="f67f128d-4520-4a94-9938-1f3b6cbd839d" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="4b4e2fc0-536a-401f-87c7-12ff38e34298" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="af276451-d6d5-40fe-a76a-546037f51815" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="19360fff-2b85-47d8-8853-9ac87ec8652d" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Enter Last Name" Guid="7c6682aa-9251-4685-be97-ca3dade19113" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="f05ed552-d933-463f-9d46-54b720693cca" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="ba469c4d-e7f6-40ff-abab-7c97f7ff811f" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="c734aaf3-313c-4bc7-bb9a-e1bd187736a5" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="a1fd1258-4fdf-4b73-abaf-e2be5af9a1b5" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="71d9399a-4f7f-4a1a-9557-e453fcf6c745" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="58bfd8e0-e2d7-4254-866f-4e49b50ac67b" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8258e315-50e0-4843-a6d8-d1215af89f3b_a8bc048e-dc47-44b6-b94d-92ee9f212360" />
+<ActInputValue Guid="8b96078c-b38a-45fa-8a72-c952e3218f4f" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="77fabe78-a904-4f0d-befc-be428c346002" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=Last Name}" />
+<ActInputValue Guid="2c24fdc2-fdb7-4e7a-9ab7-2dcf986f489f" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="dd8b844c-168e-44a3-9b57-ccbd14d72009" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="edd3eba7-f235-41de-bdfe-dc1a179952a2" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="e0cd622e-67fa-4257-8192-44bf9d8020e7" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="1d3a788e-5df3-41f5-8543-9b91db932a78" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Enter Email ID" Guid="8e12c829-a385-433a-8e44-1d2c414c55be" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="485f6f65-8ddc-4a2e-a100-1d2d5ee3fdc7" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="1468689f-61a0-418e-9e11-22ef69a1f7f1" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="8eba5f59-fda7-4d70-80ef-9c1722c60c28" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="c3474cac-9c75-42e4-97cc-0c0bffd81c6e" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="df8efe6d-204f-44e0-962d-5330b50b48b4" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="1ead66ec-f96e-4299-ac9c-8d8c3118b46a" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8258e315-50e0-4843-a6d8-d1215af89f3b_19c4ca79-3455-46fb-bc72-63cb0677296d" />
+<ActInputValue Guid="372d8dce-3477-41f9-9cdd-261087568bb3" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="71b61bbf-75ef-42b7-9f36-5c9c49131524" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=Email}" />
+<ActInputValue Guid="4210733f-2714-4757-8dfa-e57cbc208466" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="06118653-3fbd-4f92-a232-bc604f4bafe4" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="e2548ca1-1701-41e0-8dee-beeb49e14d69" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="da6db608-fa52-42bb-b3b4-20bc3fd9a160" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="14393a04-1db3-4cde-8d83-718130dee71d" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Enter Address" Guid="485b45bc-f8be-4d4e-a28d-e785ebf01953" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="ae1d20e3-2d7e-4ffc-9248-4444a92b7b16" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="ae39a91c-aa61-4141-93f3-f99f5eec00be" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="77f10710-6d9e-414f-b1a5-af14c858341f" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="5df8a61a-f162-4ac2-b9d0-bf6b8fbbf2eb" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="77283926-a09b-44af-9140-76fa2493d886" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="4aab67d0-aaeb-46d7-917e-4ac4991be2e4" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8258e315-50e0-4843-a6d8-d1215af89f3b_a2f5541d-7415-4a03-86f6-91e6a070a4bb" />
+<ActInputValue Guid="b4019e22-fbda-4147-ab01-9cc70f6ec698" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="1ffaa781-442c-4b50-b17c-66f426a6cc21" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=Address}" />
+<ActInputValue Guid="1a4b8f0a-9f81-41e3-ba6e-4097d3557bf0" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="108d2907-e2c6-475e-9bc4-83f53c15fd5e" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="56d7bf20-b3b8-45a0-a11b-60b494144263" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c3fa3071-1743-488b-add0-216e0fb766da" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="c57a32cb-9cf9-46fd-a32c-d941cec53d0a" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Enter Mobile Number" Guid="cb452a9f-bd91-450e-adeb-2b216adbab11" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="0b8ef2f0-9107-42c2-9124-e8aa5b7d6f1b" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="546890ca-eefb-4def-b58a-27e03e01d903" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="64297595-af41-468c-aad6-aef5a0464671" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="17dd6895-2f96-4c98-87c0-2f9474420d98" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="67c0839e-ecbb-489a-8980-c8d2bf3b9696" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="9ac3a0b4-6bea-4811-984e-33284e6b17c6" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8258e315-50e0-4843-a6d8-d1215af89f3b_e742df20-7b8a-45c0-b0fb-76d4800d62f3" />
+<ActInputValue Guid="939b29f4-2372-4428-aafc-d81e81d5b4fe" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b26dd6cc-57b4-4fde-bc47-0011074decd3" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=Phone Number}" />
+<ActInputValue Guid="cc65c012-367f-4d70-838f-f99f8d87fb02" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="5f29cc52-d883-4fc3-836f-ba4013f31e2a" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="17afd9a4-05da-4fe2-92ac-32d79ad82337" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="2effc4ce-3425-46c4-9c93-f00f9df897c5" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="c49927bc-8f6c-409c-91fe-d614a6b231ba" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Click On Submit Button" Guid="93d60827-09d3-4a81-9db9-cfdf82ec4743" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="af4b83ea-58ee-44ac-93e1-1d6a050005c6" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Button" />
+<ActInputValue Guid="135de61c-452f-4962-8d4f-553fdf5fb9cf" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="JavaScriptClick" />
+<ActInputValue Guid="f3259a86-b1e5-41a9-9a59-c685ca6e526f" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="3f5b4d16-ed74-4bf2-ad5f-4365588447a4" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="dd19926c-f372-49ac-aa86-b358dd63c9b4" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="10234597-520a-4954-b98b-99bbd2ac9304" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8258e315-50e0-4843-a6d8-d1215af89f3b_bd27c957-88d3-4527-9089-02bdb07f03ff" />
+<ActInputValue Guid="4bef3606-ae8a-49b1-b05c-5effd7e80f9c" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="2b152bb4-6ba4-4ecb-8b99-20ec9ede03a4" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="aa9b3d42-80ef-4426-adf7-06ff1846f608" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="db8c67eb-0920-47d7-b027-e852f06161d1" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="537fd947-453a-4044-9817-f1b9e5edc10b" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="4adb639d-d3a2-48a4-a951-147a62cc578d" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="c030c2f3-d149-4980-b055-3184e0d7d481" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Get Customer ID" Guid="9550de94-3b5a-4650-99af-e647f0906278" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="1d942246-fddd-4c0c-bb98-19cf079d7de2" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Text" />
+<ActInputValue Guid="d076fb46-2484-48d7-b9db-6630a2fde6a0" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GetValue" />
+<ActInputValue Guid="5573ff9c-ce8e-4957-9d53-1e9892803b64" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="9f165f35-6f36-4b66-a8b5-52204db44840" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="21e31e43-0afe-498e-8cf6-295e2acce860" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="44a3d0fb-2fac-4fd9-9c2d-b42f0228037c" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8258e315-50e0-4843-a6d8-d1215af89f3b_e45ced95-0d19-4934-b02a-9fbe42c5c580" />
+<ActInputValue Guid="fda35dc7-e85a-49da-9297-0d18c78a0c5f" Param="XCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="2ae04ec5-34a0-474c-b44b-3488aa8c4c3a" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="d9f9db26-4da5-478b-ac8b-9b13a95a64d6" Param="ValueToSelect" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a348b071-4280-4be3-8a34-aca352a0fe03" Param="YCoordinate" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="13f6da27-34b2-4375-9352-02cdcf4a35f8" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="d14a1f19-ee5d-4820-95a9-cf34adfc876a" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="ecb5a181-e985-460d-bce8-9d1c1f9e4658" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="cf07349a-1afa-438a-bf9c-c27083b88dc4" Operator="Equals" Param="Actual" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="Customer_ID" />
+</ReturnValues>
+</ActUIElement>
+</Acts>
+
+<Variables>
+<VariableString Description="Customer First Name" Guid="57803b98-c4ba-4d01-a8b2-2038258166f8" InitialStringValue="John" MandatoryInput="True" MappedOutputType="None" Name="First Name" ParentGuid="350dc494-dc9c-4cd2-a576-00d1ab10c7ea" ParentName="TestALM_Jinendra\Group\Create Customer" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+<VariableString Description="Customer Last Name" Guid="27417646-0472-420b-a828-9b17745b1dd8" InitialStringValue="Smithe" MandatoryInput="True" MappedOutputType="None" Name="Last Name" ParentGuid="350dc494-dc9c-4cd2-a576-00d1ab10c7ea" ParentName="TestALM_Jinendra\Group\Create Customer" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+<VariableString Description="Customer e-mail address" Guid="87fa3457-4d9f-43f9-8589-277f5f352e53" InitialStringValue="smite123@gmail.com" MandatoryInput="True" MappedOutputType="None" Name="Email" ParentGuid="350dc494-dc9c-4cd2-a576-00d1ab10c7ea" ParentName="TestALM_Jinendra\Group\Create Customer" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+<VariableDateTime DateTimeFormat="dd-MMM-yyyy hh:mm:ss tt" Description="Customer Birthdate" Guid="02549bd2-c9f1-49fe-8f48-7ebfabeb1153" InitialDateTime="03-Feb-2022 12:00:00 AM" MappedOutputType="None" MaxDateTime="2/3/2023 11:04:55 PM" MinDateTime="6/3/1969 11:04:55 PM" Name="Birthdate" ParentGuid="350dc494-dc9c-4cd2-a576-00d1ab10c7ea" ParentName="TestALM_Jinendra\Group\Create Customer" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+<VariableString Description="Enter Customer Address" Guid="59fdb47d-d827-4e1f-88c6-d655306f47ab" InitialStringValue="1390 Timberlake Manor Parkway Chesterfield" MappedOutputType="None" Name="Address" ParentGuid="350dc494-dc9c-4cd2-a576-00d1ab10c7ea" ParentName="TestALM_Jinendra\Group\Create Customer" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+<VariableString Description="Customer Phone Number" Guid="429f9bcd-bcba-4d55-ae21-f2676e88202c" InitialStringValue="972504762384" MappedOutputType="None" Name="Phone Number" ParentGuid="350dc494-dc9c-4cd2-a576-00d1ab10c7ea" ParentName="TestALM_Jinendra\Group\Create Customer" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="5bfee541-f27e-4201-a28f-52ab5da74037" MappedOutputType="None" Name="Calc" ParentGuid="350dc494-dc9c-4cd2-a576-00d1ab10c7ea" ParentName="TestALM_Jinendra\Group\Create Customer" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="5d601545-a7d2-46b8-9797-e1a911e9299d" InitialStringValue="969500" MappedOutputType="None" Name="Customer_ID" ParentGuid="350dc494-dc9c-4cd2-a576-00d1ab10c7ea" ParentName="TestALM_Jinendra\Group\Create Customer" ParentType="Activity" Publish="True" SetAsInputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Customer and Account creation " AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="2b1ca3e4-a560-4f05-b074-ec575b510634" Mandatory="True" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Caas" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Get Customer Information" Guid="4b423208-e434-4506-8bc1-b49c9dbf211e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="549167c3-d962-4930-8ce9-34fdae04fd42" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=Random_Customer_ID}" />
+</InputValues>
+</ActDummy>
+<ActSetVariableValue Active="True" Description="Generate Customer ID" Guid="fe6be943-778f-4512-a6af-ea382ebd236b" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="5f8381c9-e331-4ed5-a940-68487d9753b7" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer ID={Var Name=Random_Customer_ID}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="db1e452d-f9f7-4707-98a0-f88ba586cc22" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_Customer_ID" />
+<ActInputValue Guid="0f23b20f-9447-4fca-9616-ce8fd82b5c4b" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="10ae70e1-d7d8-4989-becb-3b426f1914a7" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Generate Billing Account Number" Guid="86cca68c-595f-4600-9cc0-4985d78419ba" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="802fef9b-a284-40e7-9923-f851807d5312" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Billing AccNo={Var Name=Random_billingno}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="4e2393f9-d63e-4eb9-92e6-19b620100054" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_billingno" />
+<ActInputValue Guid="be2ccf38-1e8e-4321-af28-fa5a28c523fd" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="13052e9f-66cf-407e-963b-36fe25eef452" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Generate Place ID" Guid="0f70b24c-d029-4c5b-96ce-ba4d6b19e967" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="e944bf10-37bc-478b-892f-72595bf20826" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Place ID={Var Name=Random_Place ID}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="0dd2625c-eb10-4801-9ab9-ac7953771524" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_Place ID" />
+<ActInputValue Guid="eb35dff5-235d-466c-8cfd-d98016e70f05" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="6e1cb197-cfb8-461e-ad82-512f4408547c" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActDummy Active="True" Description="Set Billing Address" Guid="df020bbb-0272-4978-8e78-afc076bf9ee7" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="02b532d1-5e76-48f6-9dcc-31d4623fadb9" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Billing Address={Var Name=Random_Billing Address}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="9d524902-1878-4aeb-963c-cd373e8d17b5" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Address" Guid="f0b637bb-8741-4b5d-bf45-e8c3fc0ebcfb" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="cf6fabe8-4525-442f-870c-a5542e047bba" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Address={Var Name=Random_Address}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="14304a7b-7e43-44e1-85a0-0a35a8845a54" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="beae3194-88d0-4657-bdb9-fac168b985d2" InitialStringValue="179387" MandatoryInput="True" MappedOutputType="None" Name="Customer ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="55c1309e-49ee-4f85-8ee6-5fb8cdb3533c" InitialStringValue="John Doe" MandatoryInput="True" MappedOutputType="None" Name="Customer Name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="a254d0bd-2d68-407d-8c05-4fc09ebd5c8b" InitialStringValue="(409) 512-6656" MappedOutputType="None" Name="Customer Phone" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="d6c9bc86-47aa-469c-91e4-6a2247db7519" InitialStringValue="John.Doe@gmail.com" MappedOutputType="None" Name="Customer Email" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="34dfa001-1a8c-455c-8b9a-0df98f2ab3b5" InitialStringValue="56562" MappedOutputType="None" Name="Place ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="6d4156cd-3f58-4df9-9a14-c62b77751bb0" InitialStringValue="17506 Golf Club Dr, Crosby, Texas(TX), 77532" MappedOutputType="None" Name="Address" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="8df388d2-57b7-4618-bf3d-57c85dac0597" InitialStringValue="78786765" MappedOutputType="None" Name="Billing AccNo" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="de2e08b4-2e2e-492e-9317-ebed79d83aed" InitialStringValue="17506 Golf Club Dr, Crosby, Texas(TX), 77532" MappedOutputType="None" Name="Billing Address" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableRandomNumber Guid="4f27515f-6616-4a7a-a3cf-90825d59ab16" Interval="1" IsInteger="True" MappedOutputType="None" Max="500000" Min="10000" Name="Random_Customer_ID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableRandomString Guid="f7dfa4a7-dd4c-4051-81eb-b53a5740a3e6" IsDigit="True" MappedOutputType="None" Max="8" Min="8" Name="Random_billingno" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableRandomString Guid="d3829328-d79b-4fa0-86e4-241de2d49c4d" IsDigit="True" MappedOutputType="None" Max="6" Min="6" Name="Random_Place ID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="7bfb00ca-7d6d-47f3-9c6c-00db86bc8904" InitialStringValue="CONAI ,20122 Milano /ITALY" MappedOutputType="None" Name="Random_Billing Address" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="571e337d-ecf5-4bcb-870b-44028bd85728" InitialStringValue="123546 Silver Club Dr, Crosby, California , 77532" MappedOutputType="None" Name="Random_Address" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Get Customer Information" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="03595ad6-4733-438e-b580-ac6c58b72eea" Mandatory="True" ParentGuid="7a3d67ff-3aed-4619-a863-cdbaeb34f224" PercentAutomated="100%" Publish="True" TargetApplication="Digital One OC" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Get Customer Information" Guid="5cdbe3b2-fafa-447b-9e4b-07a3642d232a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="0224227b-f944-4e52-9f56-2bf3f9fe8fc9" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=Random_Customer_ID}" />
+</InputValues>
+</ActDummy>
+<ActSetVariableValue Active="True" Description="Generate Customer ID" Guid="3f96160a-ca79-4e33-85c0-f54a45b52e66" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="a7055931-58f4-47af-8bb7-f0b7a6efbd33" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer ID={Var Name=Random_Customer_ID}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="26e2dae3-9421-4174-872c-9e75bdbec64e" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_Customer_ID" />
+<ActInputValue Guid="b112a8e5-0dd4-469c-9d80-35556b9a8da9" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="0f8a7a1d-6a1b-4e6b-ae6e-2b21b5bd2661" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Generate Billing Account Number" Guid="d3b14de3-dd8e-4311-8dd2-d59b14cc5f0f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="9958f0e3-dab2-449d-a1ce-b5712716b714" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Billing AccNo={Var Name=Random_billingno}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="546e116e-7b30-4af8-a8da-4048ed617dca" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_billingno" />
+<ActInputValue Guid="7db232d7-8b78-4ae2-807f-2278e4e258f9" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="f34598fb-d0d8-4d7e-9ea0-75b336fc67c5" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Generate Place ID" Guid="61416bc1-8818-47e3-a8b3-720e2a1589cb" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="1ca8c68c-dd64-48ab-bd79-949284bb4d89" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Place ID={Var Name=Random_Place ID}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="e7268828-5c94-4ffe-b0e2-2f5acdfd93a5" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_Place ID" />
+<ActInputValue Guid="1c196077-6fa3-44da-ab7a-caeda677c64f" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="dac608b2-55d4-4a56-a870-8edc267ad13d" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActDummy Active="True" Description="Set Billing Address" Guid="5f221bda-d652-43d1-9f0b-739273117b49" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="abf93c49-fb9c-4b08-85fc-131f9dd4a303" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Billing Address={Var Name=Random_Billing Address}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="52705f6d-a908-4609-a975-ba7581446439" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Address" Guid="a328c3df-925e-4b82-af42-de582fef058c" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="1e7ba70e-1a3a-4ff8-80a2-86e2af4b6551" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Address={Var Name=Random_Address}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="82a6efeb-7bbe-4c11-93c9-855818fe4d18" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="6807413e-3d0f-4197-a797-abfd0fc25154" InitialStringValue="179387" MandatoryInput="True" MappedOutputType="None" Name="Customer ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="96e63c6e-1f4d-44f8-8e19-4dcc54bbfe72" InitialStringValue="John Doe" MandatoryInput="True" MappedOutputType="None" Name="Customer Name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="ae176499-8620-45f4-b740-2494d54f2af0" InitialStringValue="(409) 512-6656" MappedOutputType="None" Name="Customer Phone" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="d7e30675-c3af-4627-8e01-bd9904b8cfb0" InitialStringValue="John.Doe@gmail.com" MappedOutputType="None" Name="Customer Email" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="484a8b26-77f3-423a-ad37-e23febc7ab07" InitialStringValue="56562" MappedOutputType="None" Name="Place ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="8e31a8f1-b568-4314-a450-1bdc50db6b82" InitialStringValue="17506 Golf Club Dr, Crosby, Texas(TX), 77532" MappedOutputType="None" Name="Address" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="dd2e3506-b167-4af8-8a74-f62bc7f27023" InitialStringValue="78786765" MappedOutputType="None" Name="Billing AccNo" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="60dfbf1a-ed80-4623-9286-4ce2d09510b8" InitialStringValue="17506 Golf Club Dr, Crosby, Texas(TX), 77532" MappedOutputType="None" Name="Billing Address" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableRandomNumber Guid="fc5c2a36-6037-47ab-8854-e2844900202b" Interval="1" IsInteger="True" MappedOutputType="None" Max="500000" Min="10000" Name="Random_Customer_ID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableRandomString Guid="0dcfb116-236b-40c2-a606-7ece6690e68c" IsDigit="True" MappedOutputType="None" Max="8" Min="8" Name="Random_billingno" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableRandomString Guid="1d204c47-3e87-4a45-804f-05e04b7f0824" IsDigit="True" MappedOutputType="None" Max="6" Min="6" Name="Random_Place ID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="0bda4947-ed45-487d-a59e-7b4cd0e426c1" InitialStringValue="CONAI ,20122 Milano /ITALY" MappedOutputType="None" Name="Random_Billing Address" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="ac7c7cfd-5b26-4ec4-9662-2a40aa046fea" InitialStringValue="123546 Silver Club Dr, Crosby, California , 77532" MappedOutputType="None" Name="Random_Address" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Get Customer Information" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="1a6ad528-6fa8-4b14-b291-adb6ad3ee5f0" Mandatory="True" ParentGuid="da75c15a-5221-40cb-a708-29304eb26473" PercentAutomated="100%" Publish="True" TargetApplication="Customer/Order Graph" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Get Customer Information" Guid="e96f0a0d-bfff-442e-b695-1e6ad0c65bd7" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="a0e38b28-c487-45ee-b61c-afe4d8fdea72" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActSetVariableValue Active="True" Description="Generate Customer ID" Guid="2b8a4e90-26bc-452f-93dd-b5a882a5e66f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="ef83e199-b274-438c-8b5b-b67b90b6c1eb" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer ID={Var Name=Random_Customer_ID}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="f7267480-da3e-4893-97a1-16b9391faedc" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_Customer_ID" />
+<ActInputValue Guid="2c41394d-c3a2-459e-aa81-7e590bdccf2a" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="6b454d20-497d-4869-877a-382306dc289b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Generate Billing Account Number" Guid="298e3c70-1ba8-47e3-9ef5-0e0ada33df45" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="8e3f0f5f-b5d9-41b6-9995-d7a6ed58486f" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Billing AccNo={Var Name=Random_billingno}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="68a4c496-972d-4c0c-9e89-1b76a393732a" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_billingno" />
+<ActInputValue Guid="b63ace31-354c-4046-9c7e-f4c1aece1a9e" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="2e6a3414-8f98-4acd-aaa6-9989c7472cdb" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Generate Place ID" Guid="6724f4ec-648b-44df-9c30-fa4002e68042" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="383353f9-19f0-47df-a253-91970b0d5e77" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Place ID={Var Name=Random_Place ID}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="f963c367-6940-475b-b9ad-7a4801c35264" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_Place ID" />
+<ActInputValue Guid="2936e7e1-c776-47e1-a803-5bb71f766374" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="de2d36a2-3ea8-4748-8f90-e6f496f1fd15" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActDummy Active="True" Description="Set Billing Address" Guid="a22deba3-3144-42ce-8d5c-c27e6aed936a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="0ee8e2f7-b90c-493a-b8f5-e40c350a5ba3" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Billing Address={Var Name=Random_Billing Address}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="0d286151-cb95-42a8-b8c8-b1851a9d760d" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Address" Guid="93c9d8cb-e3f5-440b-845a-5a11661bad24" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="3f0890c6-fda9-4438-aa11-9b2fc486cd9f" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Address={Var Name=Random_Address}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="76ed40f9-4328-4474-9998-3117a0841784" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="25a18cb2-437f-4de9-9692-ac0313dd06b5" InitialStringValue="John Doe" MandatoryInput="True" MappedOutputType="None" Name="Customer Name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="bc61d5b7-d2bd-4608-aeba-b08633656325" InitialStringValue="979387" MandatoryInput="True" MappedOutputType="None" Name="Customer ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="e7ae1803-3277-40fe-b2f0-b175783b951d" InitialStringValue="78786765" MappedOutputType="None" Name="Billing AccNo" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="0bbce3d1-ee70-426b-8b10-7f1cd36a66bc" InitialStringValue="17506 Golf Club Dr, Crosby, Texas(TX), 77532" MappedOutputType="None" Name="Address" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="ff19ca94-0cdc-45db-b248-7ddad879ec8e" InitialStringValue="17506 Golf Club Dr, Crosby, Texas(TX), 77532" MappedOutputType="None" Name="Billing Address&#xD;&#xA;" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="b3acbef6-e61c-4bb1-8984-49aa770b2b99" InitialStringValue="56562" MappedOutputType="None" Name="PlaceID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="87d85a9f-1de5-4226-bd40-680d487bf826" InitialStringValue="John.Doe@gmail.com" MappedOutputType="None" Name="Customer Email" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="1ad46662-e194-43bb-b2c9-18dc7903c873" InitialStringValue="(409) 555-6666" MappedOutputType="None" Name="Customer Phone" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableRandomNumber Guid="bf9edd78-19ce-47fb-98a4-efbb0ab2647c" Interval="1" IsInteger="True" MappedOutputType="None" Max="500000" Min="10000" Name="Random_Customer_ID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableRandomString Guid="3dcc997c-ec23-4b91-bccb-583d82932b7a" IsDigit="True" MappedOutputType="None" Max="8" Min="8" Name="Random_billingno" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableRandomString Guid="d63e2697-30b0-4108-84d5-89c0dcef9e8d" IsDigit="True" MappedOutputType="None" Max="6" Min="6" Name="Random_Place ID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="fb107c3d-4159-4083-949f-3e2dd489828a" InitialStringValue="CONAI ,20122 Milano /ITALY" MappedOutputType="None" Name="Random_Billing Address" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="717d0b8b-0204-4b9c-92d5-db556eab2179" InitialStringValue="123546 Silver Club Dr, Crosby, California , 77532" MappedOutputType="None" Name="Random_Address" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Discovery for WBB Plan" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="a84fe943-4334-4dcb-9e29-5b9fcc52234f" Mandatory="True" ParentGuid="89a10dab-636c-4fe1-8b71-46e28078f488" PercentAutomated="100%" Publish="True" TargetApplication="Catalog One" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Discovery for WBB Plan" Guid="234dafaa-d224-4285-8ca5-2514431eacf5" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="77055f39-7202-4bee-9a81-0f2ee01c31da" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set plan name" Guid="aeaff30a-e840-4615-8ee7-6815878abb9c" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="759009d3-9091-4aa5-ad70-0644e7853cb8" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB Plan Name={Var Name=Random_WBB Plan Name}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="6d6a69a3-e940-40aa-9568-fcd584ebbb31" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set WBB Plan details" Guid="a7cfd011-880f-491d-aeb0-545a3bcc27e7" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="1879023d-b02b-4626-9eb5-f4b62a281702" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB Plan details={Var Name=Random_WBB Plan details}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="4836117c-0d62-4906-a301-502a2282a48f" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set WBB Plan Price" Guid="1f095f01-8a06-4445-b7a8-1f8c2917dc1c" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="1e4398d8-d9f5-4a43-875f-ad1897416397" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB Plan Price={Var Name=Random_WBB Plan Price}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="45a8aeab-7f12-4a42-9197-be4c5df8f51d" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="5f69919a-5450-4a9f-85f5-5ad22338b84e" InitialStringValue="SelfServices" MandatoryInput="True" MappedOutputType="None" Name="SalesChannel" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="fbea4f7f-f89b-4e76-904b-36b70dca1665" InitialStringValue="130350702011" MandatoryInput="True" MappedOutputType="None" Name="ServiceAddressId" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="fcd92259-31e1-4412-a405-b483da29b3c7" InitialStringValue="WBBPlan" MandatoryInput="True" MappedOutputType="None" Name="ProductOfferingTypeGroup" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="043b7129-ed18-465b-a59f-bd4d9240b140" InitialStringValue="FALSE" MappedOutputType="None" Name="Disableabilitycheck" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="06f59556-641d-4184-998f-d5fb2e106297" InitialStringValue=" true" MappedOutputType="None" Name="IncludeAllNodes" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="5015d07d-f5fd-4516-9762-8bb2c976c6c7" InitialStringValue="FALSE" MappedOutputType="None" Name="CheckQualification" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableSelectionList Guid="3489994b-8b85-4075-ba2e-dd61346ba943" MappedOutputType="None" Name="WBB Plan Name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" Value="WBB with Promo">
+<OptionalValuesList>
+<OptionalValue Guid="6a0c32cd-9a9e-4112-acb0-512b2d448426" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="b2e447cb-8f42-4352-824a-62cf8502ca1d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB Without extender                                                            " />
+<OptionalValue Guid="9ca21a69-38c7-4db4-8c11-66cb9afcca6c" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Extender" />
+<OptionalValue Guid="57e75f9e-ee0b-43c8-ac80-329514d9f633" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Promo" />
+<OptionalValue Guid="cfc9ef7a-d53c-4a3d-9a9e-24a445af1af8" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Annual discount " />
+<OptionalValue Guid="b2e447cb-8f42-4352-824a-62cf8502ca1d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB Without extender" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableString Guid="51072d21-b9c6-4149-a336-5fa6ad360dc0" InitialStringValue="WBB with Promo" MappedOutputType="None" Name="WBB Plan details" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableSelectionList Guid="b06fe2fc-0eca-4e10-9886-fed684561ae9" MappedOutputType="None" Name="WBB Plan Price" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" Value="30$">
+<OptionalValuesList>
+<OptionalValue Guid="a58da45a-3e20-426d-b781-45ee3db6f790" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="5d3f39ba-94d5-419b-a8d0-3de4d4e12a3d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="40$" />
+<OptionalValue Guid="9f91ffef-de0f-4da0-9576-9e086daaf451" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30$" />
+<OptionalValue Guid="da96258f-b837-4145-adaf-aa42d8230e03" ParentGuid="00000000-0000-0000-0000-000000000000" Value="25$" />
+<OptionalValue Guid="7d662d6e-668e-48aa-a9c6-1c3715e64d06" ParentGuid="00000000-0000-0000-0000-000000000000" Value="50S" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableSelectionList Guid="9fa7c265-22d8-4cf9-bece-3f2f311d79af" MappedOutputType="None" Name="Random_WBB Plan Name" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" Value="WBB with Promo">
+<OptionalValuesList>
+<OptionalValue Guid="6a0c32cd-9a9e-4112-acb0-512b2d448426" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="b2e447cb-8f42-4352-824a-62cf8502ca1d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB Without extender                                                                " />
+<OptionalValue Guid="9ca21a69-38c7-4db4-8c11-66cb9afcca6c" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Extender" />
+<OptionalValue Guid="57e75f9e-ee0b-43c8-ac80-329514d9f633" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Promo" />
+<OptionalValue Guid="cfc9ef7a-d53c-4a3d-9a9e-24a445af1af8" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WBB with Annual discount " />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableString Guid="d6e07f07-72ad-42cc-a97a-87e62092da32" InitialStringValue="WBB with Promo" MappedOutputType="None" Name="Random_WBB Plan details" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableSelectionList Guid="dfc246b9-1e65-4e54-b553-7907efc4519f" MappedOutputType="None" Name="Random_WBB Plan Price" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" Value="30$">
+<OptionalValuesList>
+<OptionalValue Guid="a58da45a-3e20-426d-b781-45ee3db6f790" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="5d3f39ba-94d5-419b-a8d0-3de4d4e12a3d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="40$" />
+<OptionalValue Guid="9f91ffef-de0f-4da0-9576-9e086daaf451" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30$" />
+<OptionalValue Guid="da96258f-b837-4145-adaf-aa42d8230e03" ParentGuid="00000000-0000-0000-0000-000000000000" Value="25$" />
+<OptionalValue Guid="7d662d6e-668e-48aa-a9c6-1c3715e64d06" ParentGuid="00000000-0000-0000-0000-000000000000" Value="50S" />
+</OptionalValuesList>
+</VariableSelectionList>
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Discovery Equipment" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="1c7c263c-9ec7-4463-bf86-10efa0fac7d1" Mandatory="True" ParentGuid="fa97d59e-c775-4ba4-858f-35b58600d758" PercentAutomated="100%" Publish="True" TargetApplication="Catalog One" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Discovery Equipment" Guid="d585f81b-1118-4948-beb2-83adcbe4e34d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="3913d236-ad99-42de-b5c1-3bf64a7fb84f" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Equipment name" Guid="d6bfa268-d896-4e0c-82f9-8e72c0e2ac34" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="e958d002-27c5-4210-a6f5-daa429b06dec" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment Name={Var Name=Random_Equipment Name}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="1c6f0a37-5c79-4bd7-be83-c14cc555d39c" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Equipment details" Guid="33967cf8-5825-4f4b-9f2e-14eb9679c458" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="415217b6-a9db-4b1c-b2cf-b86c7cf6932b" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment Details={Var Name=Random_Equipment Details}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="67ec0036-e6b5-46f3-9f1b-ad0b5b8874dd" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActSetVariableValue Active="True" Description="Set IMEI" Guid="ce18ce6c-4004-44d3-9bb2-adb80aafa72d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="0ea11bf6-295e-4126-9510-9c4af2883826" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IMEI NO={Var Name=Random_ IMEI}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="afff836c-3ee6-420b-ac54-4e753d89b75d" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_ IMEI" />
+<ActInputValue Guid="8269c2d8-5ee6-4aa1-abac-d58296763992" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="2cd89ac3-ad38-44df-b3d5-8a6e84e72bf5" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Set Equipment serial number" Guid="43a2f471-6436-49d1-9145-a233b0354081" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="87e4e442-2a72-4868-b3b4-40a00483279e" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment serial number={Var Name=Random_Equipment serial number}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="830fec03-9e53-432e-9865-e6afa09e30ca" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_Equipment serial number" />
+<ActInputValue Guid="10f99d75-aa33-4610-bec5-3267b842b412" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="2b5684a9-520f-4fdd-ad5e-967ef6ad8731" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActDummy Active="True" Description="Set MAC Address" Guid="2c760df6-637a-4ef3-8a30-af5feaa560c8" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="d4619bb1-d7d3-4de6-8646-3ceb1680491b" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="MAC Address={Var Name=Random_MAC Address}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="29e81e55-fffd-4257-86f0-fa15f4a71423" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="fe549423-1492-4b00-b1a3-d1b30d4d3586" InitialStringValue="SelfServices" MandatoryInput="True" MappedOutputType="None" Name="SalesChannel" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="b75ebb66-e706-47c1-a8ab-22f9655925d1" InitialStringValue="130350702011" MandatoryInput="True" MappedOutputType="None" Name="ServiceAddressId" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="9a934aba-cd79-4ba6-8a39-631926c2dc98" InitialStringValue="WBBPlan" MandatoryInput="True" MappedOutputType="None" Name="ProductOfferingTypeGroup" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="e03f1d49-f72f-411b-bed0-3a01ce69d364" InitialStringValue="FALSE" MappedOutputType="None" Name="Disableabilitycheck" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="90f46c6d-dd6f-4b4c-9b4b-9f9b5ca0cf2c" InitialStringValue="FALSE" MappedOutputType="None" Name="CheckQualification" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableSelectionList Guid="e12d0b2b-afe6-4f93-9c10-e9da5eb13e2b" MappedOutputType="None" Name="Equipment Name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" Value="Equipment1">
+<OptionalValuesList>
+<OptionalValue Guid="b69a5de5-bf40-459e-bdfa-8c8a27e9bcef" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="d6e71188-8540-4778-89ab-e8443470f7e3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment1" />
+<OptionalValue Guid="edb77dc9-bcdc-4f78-a6d3-44c28332eab9" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment2" />
+<OptionalValue Guid="6155bb76-8349-41a0-9761-496f3321bccb" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment3" />
+<OptionalValue Guid="dd7c7741-e29f-4761-a689-5d031000db8e" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment4" />
+<OptionalValue Guid="258b32c4-6226-4d40-b86a-09bbb1cda2d5" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment5" />
+<OptionalValue Guid="4732e694-1b4a-4790-a669-877b2ad2ffe0" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment6" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableString Guid="f7d33404-82d9-45e0-af9f-45437ca61ac9" InitialStringValue="Equipment type" MappedOutputType="None" Name="Equipment Details" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="ade52abf-be5c-48d8-8d50-fdbb69db98e8" InitialStringValue="636199957478993" MappedOutputType="None" Name="IMEI NO" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="1ba22835-ebfd-4d8b-bba8-63ba1653c297" InitialStringValue="27744918" MappedOutputType="None" Name="Equipment serial number" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="18d8d457-d36c-4f5a-a3ed-c7c99d4f36b8" InitialStringValue="1234" MappedOutputType="None" Name="MAC Address" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="75ee2943-2c18-4938-8169-00a15e90adfb" InitialStringValue=" true" MappedOutputType="None" Name="IncludeAllNodes" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableSelectionList Guid="f65713b7-e194-416f-af74-5dff0f40c4eb" MappedOutputType="None" Name="Random_Equipment Name" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" Value="Equipment1">
+<OptionalValuesList>
+<OptionalValue Guid="b69a5de5-bf40-459e-bdfa-8c8a27e9bcef" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="d6e71188-8540-4778-89ab-e8443470f7e3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment1" />
+<OptionalValue Guid="edb77dc9-bcdc-4f78-a6d3-44c28332eab9" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment2" />
+<OptionalValue Guid="6155bb76-8349-41a0-9761-496f3321bccb" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment3" />
+<OptionalValue Guid="dd7c7741-e29f-4761-a689-5d031000db8e" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment4" />
+<OptionalValue Guid="258b32c4-6226-4d40-b86a-09bbb1cda2d5" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment5" />
+<OptionalValue Guid="4732e694-1b4a-4790-a669-877b2ad2ffe0" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Equipment6" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableRandomString Guid="e407773e-a5de-4031-b206-b0e25136ed89" IsDigit="True" MappedOutputType="None" Max="15" Min="15" Name="Random_ IMEI" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableRandomString Guid="0cab7554-c53e-4cab-9888-f7f1c9ea5f0c" IsDigit="True" MappedOutputType="None" Max="8" Min="8" Name="Random_Equipment serial number" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="ab4be6ee-0a75-4a18-aa15-f3d63a6219a1" InitialStringValue="Equipment type" MappedOutputType="None" Name="Random_Equipment Details" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="a4afcb47-fab7-4c39-ad5c-cf49e4183f6e" InitialStringValue="1234" MappedOutputType="None" Name="Random_MAC Address" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Create Order" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="f4bb42fe-bacb-4a27-b89e-b42d28fdd4a6" Mandatory="True" ParentGuid="28541916-8b44-42ef-9ebe-b16db5f23435" PercentAutomated="100%" Publish="True" TargetApplication="Digital One OC" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Create Order" Guid="8c983f15-aed3-4442-95e8-f58f88ecce6a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="c40238c8-502d-413d-8b22-1039929a106b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActSetVariableValue Active="True" Description="Generate Order ID" Guid="0be9e86e-780a-4110-a9a4-1882dfb8d10e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="942d85fe-3170-45d9-bf98-68d951271515" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Order_ID={Var Name=Random_OrderID}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="474c84d9-2b29-4e74-99e8-7889200cd51a" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_OrderID" />
+<ActInputValue Guid="a35f3ce4-0279-40a5-aed5-b0e8c0e57490" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="e264b5b8-dd13-43c0-bc16-c8de9fc2e2d2" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+</Acts>
+
+<Variables>
+<VariableString Guid="638bc4cd-5f92-4300-bbfc-ecbf0877b3ca" InitialStringValue="11123401" MandatoryInput="True" MappedOutputType="None" Name="Serial Number" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="030f4311-4d97-4dd1-9e99-d734583b8e0a" InitialStringValue="979387" MandatoryInput="True" MappedOutputType="None" Name="Customer ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="b8afa195-c3da-4a8b-9d80-5a3ba5a9b3c8" InitialStringValue="490154203237518" MandatoryInput="True" MappedOutputType="None" Name="IMEI" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="12a77c7c-49c1-4e45-8468-23dda8940c5d" InitialStringValue="1234" MandatoryInput="True" MappedOutputType="None" Name="MAC Address" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="e7c142e9-4b16-4104-afe9-170a60d16528" InitialStringValue="56562" MandatoryInput="True" MappedOutputType="None" Name="Place_ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="cf4a184e-dddb-4223-8df1-ae5541185eb3" InitialStringValue="(409) 555-6666" MappedOutputType="None" Name="Customer Phone" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="78424582-d04c-4c07-ae09-bef35d87cfc8" InitialStringValue="WBB with Promo" MappedOutputType="None" Name="Product Offering" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="2dbbfe02-ee16-4eb5-aaf3-4c9b7f7cbd48" InitialStringValue="61457944" MappedOutputType="None" Name="Order_ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableRandomString Guid="d3d2466b-604c-4b31-933e-0e9c67d269c0" IsDigit="True" MappedOutputType="None" Max="8" Min="8" Name="Random_OrderID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Get Delivery Method" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="1b080320-6c6c-4586-82fa-5f74956ee4b2" Mandatory="True" ParentGuid="3912d8de-2b57-45c4-9ccb-8722c5636c2f" PercentAutomated="100%" Publish="True" TargetApplication="Catalog One" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Get Delivery Method" Guid="6f65ba00-dde5-45cc-b4d6-9e1ecbd7e085" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d248c73b-ce8e-4ee6-9427-4dc4b6aac5dc" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Delivery Method" Guid="1eff5cf2-8a2f-4786-9e62-8512374b2d68" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="b845a3ff-6d3b-4900-bfe5-41bf96e4e1c4" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Delivery Method={Var Name=Random_Delivery Method}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="6788ee71-0ec6-41fc-9733-2d0f3fd7db84" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Delivery Cost" Guid="32f7a13b-bbaf-4e8c-a5e5-57d0114e8e93" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="1aa99f3d-eb6e-43c8-9c7a-4ff1d6d44505" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Delivery Cost={Var Name=Random_Delivery Cost}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="3f32fb3c-3843-4aa7-8aee-c65989a24653" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="fec50363-444b-45a8-9b7b-1ac352dedca9" InitialStringValue="25252525" MandatoryInput="True" MappedOutputType="None" Name="ProductOrderId" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableSelectionList Guid="b7553f6d-f3ca-42a6-bd16-f44dc315d68c" MappedOutputType="None" Name="Delivery Cost" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" Value="10$">
+<OptionalValuesList>
+<OptionalValue Guid="468a5740-733b-4aa3-98c6-d8fba943af9f" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="3487e815-c3c5-4d69-9004-6a52ac5244ad" ParentGuid="00000000-0000-0000-0000-000000000000" Value="10$" />
+<OptionalValue Guid="0f47c188-e07f-4656-a615-07f5124c5909" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0$" />
+<OptionalValue Guid="6d77f501-2fb2-4b5c-b74e-ac71e63e58d3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="50$" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableSelectionList Guid="f8d25305-4f9a-4500-8f6d-fd256fdb3762" MappedOutputType="None" Name="Delivery Method" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" Value="Pickup">
+<OptionalValuesList>
+<OptionalValue Guid="4e0f159d-7dc0-44ed-a26a-e81a099704f4" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="04008a8e-c763-43d8-b1a3-2d2be1d8eea1" ParentGuid="00000000-0000-0000-0000-000000000000" Value="2DaysShipping" />
+<OptionalValue Guid="bb06ee28-5897-4986-b9f8-9b587c9c180d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Pickup" />
+<OptionalValue Guid="8853a2e7-8529-405c-a09c-35f1538471a8" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Overnight" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableSelectionList Guid="657cf834-ff3e-48ff-910e-8c69e69e8c12" MappedOutputType="None" Name="Random_Delivery Cost" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" Value="10$">
+<OptionalValuesList>
+<OptionalValue Guid="468a5740-733b-4aa3-98c6-d8fba943af9f" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="3487e815-c3c5-4d69-9004-6a52ac5244ad" ParentGuid="00000000-0000-0000-0000-000000000000" Value="10$" />
+<OptionalValue Guid="0f47c188-e07f-4656-a615-07f5124c5909" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0$" />
+<OptionalValue Guid="6d77f501-2fb2-4b5c-b74e-ac71e63e58d3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="50$" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableSelectionList Guid="0fe605a7-ff1f-4499-9c9e-466378269142" MappedOutputType="None" Name="Random_Delivery Method" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" Value="Pickup">
+<OptionalValuesList>
+<OptionalValue Guid="4e0f159d-7dc0-44ed-a26a-e81a099704f4" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<OptionalValue Guid="04008a8e-c763-43d8-b1a3-2d2be1d8eea1" ParentGuid="00000000-0000-0000-0000-000000000000" Value="2DaysShipping" />
+<OptionalValue Guid="bb06ee28-5897-4986-b9f8-9b587c9c180d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Pickup" />
+<OptionalValue Guid="8853a2e7-8529-405c-a09c-35f1538471a8" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Overnight" />
+</OptionalValuesList>
+</VariableSelectionList>
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Get Product order" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="1d3d1441-1c19-49e8-91bf-7eaca72d9282" Mandatory="True" ParentGuid="ad85a9a6-96f1-4fda-9dcf-d50f4f100c86" PercentAutomated="100%" Publish="True" TargetApplication="Digital One OC" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Get Product order" Guid="3d442438-100f-4b94-8fff-7c2d4ae4f126" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="f7755f28-92ac-4c64-9d3e-28efc00ea5b4" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Order Monthly charge" Guid="f20b427e-fc36-4dd8-aab2-9066a78256c0" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="1eeff2d6-b216-4784-97cf-4b4e68aa0d22" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Order Monthly Charge={Var Name=Random_Order Monthly Charge}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="d9c48432-bab5-435e-a0d3-2dc4abb4a757" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Order Prorate Charge" Guid="67f7b67a-dffd-434b-a6a6-b9b8f2a7530a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="918bf28b-5011-4911-8e66-ee037835b8b4" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Order Prorate Charge={Var Name=Random_Order Prorate Charge}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="ea1fcee2-8a97-4909-a490-1f8ba4e9934c" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Tax Charge" Guid="9feb8c29-73f9-45f7-b613-9ef3e6d27d7f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="af0142d5-7b76-49e1-a183-0053dca2527d" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Taxes Charge={Var Name=Random_Taxes Charge}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="719c67ae-1f40-483a-8f12-e1bd6cf53511" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="4d06e0bf-4f5a-4acb-81bb-3ff7030771e4" InitialStringValue="78782343" MandatoryInput="True" MappedOutputType="None" Name="OrderID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="c4cf57e9-9729-4240-8cc0-ffdca320288a" InitialStringValue="FALSE" MandatoryInput="True" MappedOutputType="None" Name="ExcludePrices" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="8d81e379-a9a1-40e6-87ce-5c410affa362" InitialStringValue="TRUE" MappedOutputType="None" Name="ProratedPrices" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="4fd7034d-08f8-43ba-983e-a0996fa429b7" InitialStringValue="TRUE" MappedOutputType="None" Name="CalculateTaxInd" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="1941666f-2884-4974-abbc-a82c60658457" InitialStringValue="30$" MappedOutputType="None" Name="Order Monthly Charge" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="bf22946f-cfa7-4510-9df7-4a3ebe9ccde8" InitialStringValue="11$" MappedOutputType="None" Name="Order Prorate Charge" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="8f83d207-cffc-47c9-af5c-8327132663eb" InitialStringValue="2.46$" MappedOutputType="None" Name="Taxes Charge" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="93af3b79-f700-4c52-bce2-c1612a14c3c6" InitialStringValue="30$" MappedOutputType="None" Name="Random_Order Monthly Charge" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="5e0cb311-1884-4239-818b-61861f4fd7b8" InitialStringValue="11$" MappedOutputType="None" Name="Random_Order Prorate Charge" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="c4460305-62c2-4ec0-a1b0-e24797cc9fa5" InitialStringValue="2.46$" MappedOutputType="None" Name="Random_Taxes Charge" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Get Product order" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="e2e99d37-f032-4aa5-9029-8c53559905ec" Mandatory="True" ParentGuid="912f246e-063f-47b3-9bb1-5f37840c3215" PercentAutomated="100%" Publish="True" TargetApplication="RTB - Amdocs Real Time Billing" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Get Product order" Guid="5ccdb821-c281-42c0-b138-97fb29c2e72d" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="c31a393e-3a0e-4851-b0f5-6fb28d32d57f" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Tax Charge" Guid="70405c5b-4375-4997-945f-d96c8c856a58" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="afe6bede-4cd6-4d85-80f7-8833a6db4fbc" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Taxes Charge={Var Name=Random_Taxes Charge}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="7d87cc59-2e7d-4317-98c6-de72e888b22c" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Order Prorate Charge" Guid="e2f8bd59-e397-452e-83a7-5ea2edc4017e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="f40e8b85-47d0-4b7e-bbe1-de55e79918e8" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Order Prorate Charge={Var Name=Random_Order Prorate Charge}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="e45c2ab6-f3df-49dd-8c46-6dd386a6a3f3" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Order Monthly charge" Guid="578f8931-085f-40a4-8f4e-d51032f1e929" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="cf0b11c1-4a77-43d5-8f92-d8ba8dfd27e7" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Order Monthly Charge={Var Name=Random_Order Monthly Charge}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="76197e28-3ebf-4a48-a126-cbb0175ae092" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="4fd32e3f-7c13-425d-ad2f-f8bcf4a196b6" InitialStringValue="78782343" MandatoryInput="True" MappedOutputType="None" Name="OrderID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="2e2ee6b0-c6b4-4c94-ba0a-a287763628b4" InitialStringValue="FALSE" MandatoryInput="True" MappedOutputType="None" Name="ExcludePrices" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="c73f78b9-7538-4c60-bff3-1615e6a7dbd0" InitialStringValue="TRUE" MappedOutputType="None" Name="ProratedPrices" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="f61eb10c-4692-43d8-b99f-a97b60bdffb0" InitialStringValue="TRUE" MappedOutputType="None" Name="CalculateTaxInd" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="6f0c7bb6-33f9-4072-a8b5-6f8776c832fd" InitialStringValue="30$" MappedOutputType="None" Name="Order Monthly Charge" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="be9b8c2c-bda0-4494-841e-0a1913902bf1" InitialStringValue="11$" MappedOutputType="None" Name="Order Prorate Charge" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="e1d9b24b-1483-4bf7-9ba6-e1fc9c9e10e6" InitialStringValue="2.46$" MappedOutputType="None" Name="Taxes Charge" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="60ec17ea-138c-4261-bbea-5dc5433360c6" InitialStringValue="2.46$" MappedOutputType="None" Name="Random_Taxes Charge" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="24c36161-abc5-43bf-b55e-80b09f922564" InitialStringValue="11$" MappedOutputType="None" Name="Random_Order Prorate Charge" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="36f26926-aecc-44bd-a13d-4bf8cd210bd5" InitialStringValue="30$" MappedOutputType="None" Name="Random_Order Monthly Charge" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Get Product order" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="cb3df656-b9ff-4527-a95e-f9bc5e7d168f" Mandatory="True" ParentGuid="66182ea1-a760-47c5-9bb9-5466fae28360" PercentAutomated="100%" Publish="True" TargetApplication="OTS" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Get Product order" Guid="b11238a6-07f6-44f7-81c7-05183c0e3dd7" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="5ed8a8ea-3ee7-40d1-8eb8-04fc17003782" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Tax Charge" Guid="72bffcc0-e917-4dfb-a605-12c89800fa84" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="37e90527-53f5-4bb2-ba19-07cda3fc6026" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Taxes Charge={Var Name=Random_Taxes Charge}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="008b727e-6ae4-47f0-ad42-12e80ffbd11e" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="09f1c89d-e233-409f-826a-458db48a6fa6" InitialStringValue="78782343" MandatoryInput="True" MappedOutputType="None" Name="OrderID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="93d1daad-1192-4311-a233-b3c1aa2d46ab" InitialStringValue="TRUE" MappedOutputType="None" Name="CalculateTaxInd" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="f4b5e79d-7ed8-49ba-9fae-b339af252b7b" InitialStringValue="2.46$" MappedOutputType="None" Name="Taxes Charge" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="95830312-a501-46db-8f04-098d61bbccf1" InitialStringValue="2.46$" MappedOutputType="None" Name="Random_Taxes Charge" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Submit Order" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="b6678d71-74d7-465f-a3ba-b72d35cfb4fd" Mandatory="True" ParentGuid="a5ede79b-53c1-48f9-8379-ac520d711dee" PercentAutomated="100%" Publish="True" TargetApplication="Digital One OC" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Submit Order" Guid="6049074c-4645-4efd-97fc-11839f2bf538" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="1186e189-48e1-4d4a-81e1-d8ecb4955717" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Order Status" Guid="7815f94f-0765-4db0-81fe-2439e4b88e00" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="c6f8e1f5-c2a2-43d1-8364-a7e7a2e0c71a" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Order Status={Var Name=Random_Order Status}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="d6e4c199-2f34-4b45-a28b-04ee6efa1ac6" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="bf06af73-bd8b-4939-b500-2a044ed735a9" InitialStringValue="78782343" MandatoryInput="True" MappedOutputType="None" Name="OrderID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="30781e24-585d-4da6-94bc-b96787858da2" InitialStringValue="Completed" MappedOutputType="None" Name="Order Status" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="0028b8cd-f165-4cf5-9d3f-43a3f3bd0642" InitialStringValue="Completed" MappedOutputType="None" Name="Random_Order Status" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Submit Order" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="3ebca4a5-125b-49c9-89dd-7f1cac5f1b56" Mandatory="True" ParentGuid="fd4bf6ea-e98f-4dea-835d-ed7f6488616d" PercentAutomated="100%" Publish="True" TargetApplication="Digital One OH" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Submit Order" Guid="a1ffc0eb-ca0f-48cb-8df0-62d06833132a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="76d462b9-c13c-4cd7-852a-6bbb953b70e5" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Order Status" Guid="5c470383-e673-464e-9722-d6c9136d1885" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="abe9c0bb-c140-4a4b-847e-3a3fc3940729" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Order Status={Var Name=Random_Order Status}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="f0500620-c0d7-4067-9269-4a179d7e0495" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="456e740a-77ea-4ded-b8ff-8b6323ccf3d3" InitialStringValue="78782343" MandatoryInput="True" MappedOutputType="None" Name="OrderID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="1a0ed884-9c2e-47f8-b06f-1deb77082160" InitialStringValue="Completed" MappedOutputType="None" Name="Order Status" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="05203309-e665-4670-b253-45a5abbbfdff" InitialStringValue="Completed" MappedOutputType="None" Name="Random_Order Status" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Create User" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="89b5c655-9cae-42bc-9cea-357e0f37339c" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Customer Creation" Type="Regular">
+<Acts>
+<ActWebAPIModel Active="True" Description="Create user- API Model Execution" Guid="cd07942e-7a77-4042-a04f-81983318cd3a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="a61bac10-c778-473b-8642-cb7b9eb3749a" Param="&lt;ID&gt;" ParamGuid="133cee16-a0b1-440e-adee-f0338d1789e5" ParentGuid="00000000-0000-0000-0000-000000000000" Value="1" />
+<EnhancedActInputValue Guid="c96dfc90-146b-4f87-af35-7db6fdd773be" Param="&lt;USERNAME&gt;" ParamGuid="73cb9ce0-7f1d-4118-8e5f-85db01c11367" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Jinendra" />
+<EnhancedActInputValue Guid="e8272a77-7526-42d6-9529-bb20f063842a" Param="&lt;FIRSTNAME&gt;" ParamGuid="ff8a9cce-7270-4284-875a-77d0a0a6bae1" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=firstname}" />
+<EnhancedActInputValue Guid="06c934cd-d7c2-4d1d-8b15-c2bedec82cb3" Param="&lt;LASTNAME&gt;" ParamGuid="856eceb1-9f03-49cb-bb39-0e23678b6507" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=lastname}" />
+<EnhancedActInputValue Guid="15fe3f68-5f11-473a-95a7-f23fa78dd73b" Param="&lt;EMAIL&gt;" ParamGuid="1e6fa2f2-8c49-4e43-a71c-e2efa3801d73" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=lastname}" />
+<EnhancedActInputValue Guid="2f18cfde-d825-46fe-b452-6c537b512cd7" Param="&lt;PASSWORD&gt;" ParamGuid="cff20abe-8b1a-49bb-a7f6-42475dca5b02" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Dummy@123" />
+<EnhancedActInputValue Guid="32272002-6944-4f7a-a6fc-b205b2ab351e" Param="&lt;PHONE&gt;" ParamGuid="8db1615a-337d-403e-af64-8ba268ab053b" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=phone}" />
+<EnhancedActInputValue Guid="7ab1a475-2860-478c-b869-956686a3d145" Param="&lt;USERSTATUS&gt;" ParamGuid="96572208-9c49-40b0-8371-a3a538050c10" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="778b17fb-62a0-4ced-b350-08833509b431" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="6c87e02e-f935-4348-90b9-c85c89147ca4" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="c6eba01c-11d3-4e56-9059-5e2cf1981d58" Operator="Equals" Param="Header: Status Code " ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="response_status" />
+</ReturnValues>
+</ActWebAPIModel>
+</Acts>
+
+<Variables>
+<VariableString Guid="db8a64bb-c00a-415d-9ab6-80b47167bc31" InitialStringValue="Jinendra" MappedOutputType="None" Name="firstname" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="2c3fbba3-2e88-4c26-9799-4a4e2fa2a59a" InitialStringValue="Ghodke" MappedOutputType="None" Name="lastname" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="82e9950c-ed7c-4511-b035-20ebcc5daf0a" InitialStringValue="abc@test.com" MappedOutputType="None" Name="email" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="3b71a1ea-b1de-437c-a040-9b2863b3b25b" InitialStringValue="1234567890" MappedOutputType="None" Name="phone" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="6ac4ce6c-f77e-4b2d-9426-29246482b0d5" InitialStringValue="OK" MappedOutputType="None" Name="response_status" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+</Variables>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="bca34e71-3828-4341-b3fe-fbb567b18c03" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityDescription="Create new Customer in the system" ActivityGuid="1085a561-d436-4786-afc7-307621fb577d" ActivityName="Create Customer" Guid="5b3ce9bd-a3a0-4d3c-a332-de01691b68f0" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="2b1ca3e4-a560-4f05-b074-ec575b510634" ActivityName="Customer and Account creation " Guid="ffcc32b7-28b3-49b7-a5bb-1e98dd5374f1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="03595ad6-4733-438e-b580-ac6c58b72eea" ActivityName="Get Customer Information" Guid="e4b07b64-c44c-4440-b6c4-42365fb73d1e" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="1a6ad528-6fa8-4b14-b291-adb6ad3ee5f0" ActivityName="Get Customer Information" Guid="6d01ea68-9b7d-4db5-ab3a-5cd2f2d0e6eb" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="a84fe943-4334-4dcb-9e29-5b9fcc52234f" ActivityName="Discovery for WBB Plan" Guid="03a80c94-954a-4e65-9893-ecb888b52aa2" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="1c7c263c-9ec7-4463-bf86-10efa0fac7d1" ActivityName="Discovery Equipment" Guid="0d74c227-98a9-4fc3-abf4-57bb458e5c60" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="f4bb42fe-bacb-4a27-b89e-b42d28fdd4a6" ActivityName="Create Order" Guid="984dbd43-eafc-4f86-85ef-3307e1a34253" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="1b080320-6c6c-4586-82fa-5f74956ee4b2" ActivityName="Get Delivery Method" Guid="f2d9f4ff-4e8c-4999-b9d0-f1d9c036dc7d" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="1d3d1441-1c19-49e8-91bf-7eaca72d9282" ActivityName="Get Product order" Guid="7feea9d0-11c6-4611-8d94-c4916a422d5b" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="e2e99d37-f032-4aa5-9029-8c53559905ec" ActivityName="Get Product order" Guid="c844dea2-94bc-4793-bb5c-dfc134153936" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="cb3df656-b9ff-4527-a95e-f9bc5e7d168f" ActivityName="Get Product order" Guid="b0e43c38-26a0-4817-9bec-c6d4ad8d7cc1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="b6678d71-74d7-465f-a3ba-b72d35cfb4fd" ActivityName="Submit Order" Guid="85858429-a3f9-4357-a0f1-c1228c979186" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="3ebca4a5-125b-49c9-89dd-7f1cac5f1b56" ActivityName="Submit Order" Guid="be6d32a3-6580-4a52-8f03-a9e42c066cf3" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="89b5c655-9cae-42bc-9cea-357e0f37339c" ActivityName="Create User" Guid="dbd0ab8c-4fd2-4b0e-8aff-ece53bc8acd8" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+<ActivitiesGroup Guid="9298275b-63de-4566-82b0-967d6f4d8dad" Name="Get Customer Information" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivitiesGroup Guid="28bcd3d3-c05f-493d-ada1-9ee791ab438d" Name="Submit Order" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="Digital One OC" Guid="5852250e-b8d1-489b-bf29-2775a250cc77" LastExecutingAgentName="OrdersSystemService" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="RTB - Amdocs Real Time Billing" Guid="d9a9b0f1-66d0-4ca2-9c08-5613cf372b7b" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Customer/Order Graph" Guid="23a53d71-10a7-4710-a742-d7ec9befa923" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Catalog One" Guid="1de56583-2e05-4d4e-9308-74cc17d36cbc" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="OTS" Guid="b807daec-ceff-4801-b29f-f406067e5284" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Digital One OH" Guid="3fe4ff9d-94b6-44cf-be9f-c0d7427dca4a" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Customer Creation System" Guid="9572a096-b9f6-4f00-940f-f8f1ac92a469" LastExecutingAgentName="Chrome" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Caas" Guid="17cfccb3-645b-48f5-b60b-f7c0fdda547f" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="Customer Creation" Guid="d0c2d561-0ad8-4e42-be9e-ace5e9009c91" LastExecutingAgentName="OrdersSystemService" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+
+<Variables>
+<VariableString Guid="7cf0b734-350b-4133-a2de-4dfa775462bc" InitialStringValue="17506 Golf Club Dr, Crosby, Texas(TX), 77532" LinkedVariableName="Billing Address" MappedOutputType="None" Name="New Variable String" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</BusinessFlow></GingerRepositoryItem>

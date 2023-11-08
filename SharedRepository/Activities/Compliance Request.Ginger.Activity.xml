@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="e84adfb9-15e0-48c9-9650-2f2ed85a9cf3" ItemType="Activity" CreatedBy="ITSIKD" Created="202302151353" GingerVersion="4.4.0.0" Version="4" LastUpdateBy="MENIK" LastUpdate="202302202159" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Compliance Request" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="e84adfb9-15e0-48c9-9650-2f2ed85a9cf3" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Compliance" Type="Regular">
+<Acts>
+<ActWebAPIModel Active="True" Description="Sending a compliance request- API Model Execution" Guid="fe5c5361-f4a4-4748-bd0d-3289f50deda2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="449a6e20-5953-43e3-9419-44212bcb80af" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="c1a0edaa-48cd-41e7-822f-ad123dd36044" />
+</InputValues>
+</ActWebAPIModel>
+</Acts>
+</Activity></GingerRepositoryItem>

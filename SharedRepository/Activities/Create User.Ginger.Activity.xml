@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="89b5c655-9cae-42bc-9cea-357e0f37339c" ItemType="Activity" CreatedBy="meni" Created="202206061426" GingerVersion="4.4.0.0" Version="4" LastUpdateBy="MENIK" LastUpdate="202302202159" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Create User" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="89b5c655-9cae-42bc-9cea-357e0f37339c" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Customer Creation" Type="Regular">
+<Acts>
+<ActWebAPIModel Active="True" Description="Create user- API Model Execution" Guid="ff435dc6-fabd-4be8-8ee0-7853735629d7" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="a61bac10-c778-473b-8642-cb7b9eb3749a" Param="&lt;ID&gt;" ParamGuid="133cee16-a0b1-440e-adee-f0338d1789e5" ParentGuid="00000000-0000-0000-0000-000000000000" Value="1" />
+<EnhancedActInputValue Guid="c96dfc90-146b-4f87-af35-7db6fdd773be" Param="&lt;USERNAME&gt;" ParamGuid="73cb9ce0-7f1d-4118-8e5f-85db01c11367" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Jinendra" />
+<EnhancedActInputValue Guid="e8272a77-7526-42d6-9529-bb20f063842a" Param="&lt;FIRSTNAME&gt;" ParamGuid="ff8a9cce-7270-4284-875a-77d0a0a6bae1" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=firstname}" />
+<EnhancedActInputValue Guid="06c934cd-d7c2-4d1d-8b15-c2bedec82cb3" Param="&lt;LASTNAME&gt;" ParamGuid="856eceb1-9f03-49cb-bb39-0e23678b6507" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=lastname}" />
+<EnhancedActInputValue Guid="15fe3f68-5f11-473a-95a7-f23fa78dd73b" Param="&lt;EMAIL&gt;" ParamGuid="1e6fa2f2-8c49-4e43-a71c-e2efa3801d73" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=lastname}" />
+<EnhancedActInputValue Guid="2f18cfde-d825-46fe-b452-6c537b512cd7" Param="&lt;PASSWORD&gt;" ParamGuid="cff20abe-8b1a-49bb-a7f6-42475dca5b02" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Dummy@123" />
+<EnhancedActInputValue Guid="32272002-6944-4f7a-a6fc-b205b2ab351e" Param="&lt;PHONE&gt;" ParamGuid="8db1615a-337d-403e-af64-8ba268ab053b" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=phone}" />
+<EnhancedActInputValue Guid="7ab1a475-2860-478c-b869-956686a3d145" Param="&lt;USERSTATUS&gt;" ParamGuid="96572208-9c49-40b0-8371-a3a538050c10" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="f7e43a7f-a754-4071-a221-ce04835e1fba" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="6c87e02e-f935-4348-90b9-c85c89147ca4" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="7382f1cd-a0a0-4f11-adef-b941ba930063" Operator="Equals" Param="Header: Status Code " ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="Variable" StoreToValue="response_status" />
+</ReturnValues>
+</ActWebAPIModel>
+</Acts>
+
+<Variables>
+<VariableString Guid="054d15ba-dc58-4fd9-86e2-a42bdccbaf2f" InitialStringValue="Jinendra" MappedOutputType="None" Name="firstname" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="9b97df39-d01b-4cb0-8524-7c436669bc8f" InitialStringValue="Ghodke" MappedOutputType="None" Name="lastname" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="07271ccd-6092-4b6f-93af-46a4098ad2aa" InitialStringValue="abc@test.com" MappedOutputType="None" Name="email" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="c68866d0-9e3b-4ff8-b506-3a23ef86585f" InitialStringValue="1234567890" MappedOutputType="None" Name="phone" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="8adb2cdb-a2f0-489a-9995-c314f1afc633" InitialStringValue="OK" MappedOutputType="None" Name="response_status" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+</Variables>
+</Activity></GingerRepositoryItem>

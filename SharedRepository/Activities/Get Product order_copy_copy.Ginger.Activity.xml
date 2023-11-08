@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="66182ea1-a760-47c5-9bb9-5466fae28360" ItemType="Activity" CreatedBy="hirals" Created="202205201002" GingerVersion="4.4.0.0" Version="6" LastUpdateBy="hirals" LastUpdate="202206071322" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Get Product order" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="66182ea1-a760-47c5-9bb9-5466fae28360" Mandatory="True" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="OTS" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Get Product order" Guid="a5b2aea8-7e64-40dd-9486-52737e88ff39" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="532ec0fe-3c5f-4d2b-bebb-c614c8bc2565" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Tax Charge" Guid="266a8ad7-2efe-452c-9dcc-e1e4917f55d4" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="5fe12c35-4550-462a-92b8-b92d7efc1183" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Taxes Charge={Var Name=Random_Taxes Charge}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="75e4eb50-c6f2-41da-92df-d16aa25ccb0b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="c29e6dfe-0f2a-4fb4-be2c-aa4b7758d6c2" InitialStringValue="78782343" MandatoryInput="True" MappedOutputType="None" Name="OrderID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="0b869ce1-3030-4e12-b0e7-5926daf2522e" InitialStringValue="TRUE" MappedOutputType="None" Name="CalculateTaxInd" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="da19cd5e-a676-47d3-bc6b-6fbae07f2230" InitialStringValue="2.46$" MappedOutputType="None" Name="Taxes Charge" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="20ce05ed-4cb1-4c7d-9f34-a485a1f7dabf" InitialStringValue="2.46$" MappedOutputType="None" Name="Random_Taxes Charge" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity></GingerRepositoryItem>

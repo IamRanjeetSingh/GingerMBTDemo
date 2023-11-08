@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="28541916-8b44-42ef-9ebe-b16db5f23435" ItemType="Activity" CreatedBy="meni" Created="202206061021" GingerVersion="4.4.0.0" Version="4" LastUpdateBy="MENIK" LastUpdate="202302202159" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Create Order" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="28541916-8b44-42ef-9ebe-b16db5f23435" Mandatory="True" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Digital One OC" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Create Order" Guid="2923922e-c5b8-41e4-941a-fa254c9a9071" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="5" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d7860e5d-221d-4ccf-afaf-e1f5ff5f5078" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActSetVariableValue Active="True" Description="Generate Order ID" Guid="608a56fe-388b-4131-9871-370a1e220348" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="5ab8c172-e6c4-44f5-9712-8fdd57ed3736" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Order_ID={Var Name=Random_OrderID}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="7654e304-c8d5-4824-94b9-3f301754b470" Param="VariableName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Random_OrderID" />
+<ActInputValue Guid="4f4d0260-1dac-494f-9275-e78afeeefdd4" Param="SetVariableValueOption" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AutoGenerateValue" />
+<ActInputValue Guid="22a6354d-2391-46b0-a6c8-411a6764dbd1" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+</Acts>
+
+<Variables>
+<VariableString Guid="7f32cef2-8e9a-4921-aba8-de8c8a14485b" InitialStringValue="11123401" MandatoryInput="True" MappedOutputType="None" Name="Serial Number" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="55940d74-292f-4b15-b193-ffc553372901" InitialStringValue="979387" MandatoryInput="True" MappedOutputType="None" Name="Customer ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="c289a4cf-bb45-41e0-9e97-069cf96010b4" InitialStringValue="490154203237518" MandatoryInput="True" MappedOutputType="None" Name="IMEI" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="a8dfdef3-da12-4b2f-8874-4b0273f62dfd" InitialStringValue="1234" MandatoryInput="True" MappedOutputType="None" Name="MAC Address" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="e6be6c3d-08dc-4abd-ada0-c62ac9959e3d" InitialStringValue="56562" MandatoryInput="True" MappedOutputType="None" Name="Place_ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="f0b8d5e7-cce9-4a42-90e7-4edc22e1256e" InitialStringValue="(409) 555-6666" MappedOutputType="None" Name="Customer Phone" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="88fe0b1b-84b1-443c-abab-486cc9ca9040" InitialStringValue="WBB with Promo" MappedOutputType="None" Name="Product Offering" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="af73e291-6b25-4f12-a66f-30559a8029b5" InitialStringValue="61457944" MappedOutputType="None" Name="Order_ID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableRandomString Guid="d7afb5f7-3da2-4fe7-90da-69b490e5382e" IsDigit="True" MappedOutputType="None" Max="8" Min="8" Name="Random_OrderID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity></GingerRepositoryItem>

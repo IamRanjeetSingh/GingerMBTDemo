@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="42e4e015-6478-404e-befd-17af7434bc66" ItemType="ApplicationAPIModel" CreatedBy="ITSIKD" Created="202302151344" GingerVersion="4.4.0.0" Version="2" LastUpdateBy="ITSIKD" LastUpdate="202302151355" />
+<ApplicationAPIModel APIType="REST" AuthorizationType="NoAuthentication" CertificateType="AllSSL" ContentType="JSon" CookieMode="Session" EndpointURL="https://api.fusionfabric.cloud/payment/payment-initiation/realtime-payments/v2/us-real-time-payment/tch-rtps/&lt;{REALTIMECTPAYMENTID}&gt;/status" Guid="42e4e015-6478-404e-befd-17af7434bc66" Name="Get Realtime Credit Transfer Payment Status" NetworkCredentials="Default" ParentGuid="00000000-0000-0000-0000-000000000000" ReqHttpVersion="HTTPV10" RequestBodyType="FreeText" RequestType="GET" ResponseContentType="JSon" SecurityType="None" TargetApplicationKey="Payment~4327fc9c-c653-49df-a9f8-8eaca21244a2" URLDomain="https://api.fusionfabric.cloud/payment/payment-initiation/realtime-payments/v2">
+<AppModelParameters>
+<AppModelParameter Description="{realtimeCTPaymentId}in url" Guid="f5ceed72-67f1-46c4-83b4-7b43cb4fa7d8" ParentGuid="00000000-0000-0000-0000-000000000000" PlaceHolder="&lt;{REALTIMECTPAYMENTID}&gt;" />
+</AppModelParameters>
+
+<ReturnValues>
+<ActReturnValue DoNotConsiderAsTemp="True" Guid="ceef8af0-e8d6-496f-afd5-2ad688c2a713" Operator="Legacy" Param="&lt;TRANSACTIONSTATUS&gt;" ParentGuid="00000000-0000-0000-0000-000000000000" Path="paymentInitiationStatusReport.transactionStatus" StoreTo="None" />
+<ActReturnValue DoNotConsiderAsTemp="True" Guid="215f4962-f4d2-4f1d-9ee5-fbc3896e943f" Operator="Legacy" Param="&lt;STATUSREASONCODE&gt;" ParentGuid="00000000-0000-0000-0000-000000000000" Path="paymentInitiationStatusReport.statusReasonCode" StoreTo="None" />
+<ActReturnValue DoNotConsiderAsTemp="True" Guid="a349dff5-b954-42a5-b2e2-280bbcbddc84" Operator="Legacy" Param="&lt;STATUSREASONADDITIONALINFORMATION&gt;" ParentGuid="00000000-0000-0000-0000-000000000000" Path="paymentInitiationStatusReport.statusReasonAdditionalInformation" StoreTo="None" />
+</ReturnValues>
+</ApplicationAPIModel></GingerRepositoryItem>

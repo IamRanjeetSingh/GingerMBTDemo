@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="fd4bf6ea-e98f-4dea-835d-ed7f6488616d" ItemType="Activity" CreatedBy="hirals" Created="202205201002" GingerVersion="4.4.0.0" Version="8" LastUpdateBy="hirals" LastUpdate="202206071322" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Submit Order" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="fd4bf6ea-e98f-4dea-835d-ed7f6488616d" Mandatory="True" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="Digital One OH" Type="Regular">
+<Acts>
+<ActDummy Active="True" Description="Submit Order" Guid="469e7cdb-7c68-4d08-8ca3-85f8b65de5c1" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="bee80725-f12d-4f66-ae9b-7c3c95e510d0" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActDummy Active="True" Description="Set Order Status" Guid="1f37e643-06c8-454f-86d4-f62959b7e13f" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="SetVariableValue" Guid="fde15dd3-a812-4039-983d-42a4e75a7595" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Order Status={Var Name=Random_Order Status}" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="7fa01c40-bebe-41f6-a1f1-0a9bd7d918e4" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+</Acts>
+
+<Variables>
+<VariableString Guid="b83e5881-f66d-4882-89f8-1a2a58223564" InitialStringValue="78782343" MandatoryInput="True" MappedOutputType="None" Name="OrderID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="c850eb13-d2c2-4c54-9614-5191326e902b" InitialStringValue="Completed" MappedOutputType="None" Name="Order Status" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="49710295-16a8-46aa-91f0-ad5d0e00fa08" InitialStringValue="Completed" MappedOutputType="None" Name="Random_Order Status" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity></GingerRepositoryItem>
